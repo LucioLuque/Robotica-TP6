@@ -8,7 +8,7 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 import time
-from sklearn.neighbors import NearestNeighbors
+# from sklearn.neighbors import NearestNeighbors
 
 
 def closest_point_matching(X, P):
@@ -25,11 +25,20 @@ def closest_point_matching(X, P):
   P_matched = P
 
   #TODO: implement
-  neighbors = NearestNeighbors(n_neighbors=1)
-  neighbors.fit(P.T)
-  distances, indices = neighbors.kneighbors(X.T)
-  # print(indices)
-  P_matched = P[:, indices.flatten()]
+  # neighbors = NearestNeighbors(n_neighbors=1)
+  # neighbors.fit(P.T)
+  # distances, indices = neighbors.kneighbors(X.T)
+  # # print(indices)
+  # P_matched = P[:, indices.flatten()]
+  n = X.shape[1]
+  P_matched = np.zeros_like(P)
+  used = np.zeros(P.shape[1], dtype=bool)
+  for i in range(n):
+      distances = np.linalg.norm(P - X[:, i:i+1], axis=0)
+      distances[used] = np.inf
+      min_index = np.argmin(distances)
+      P_matched[:, i] = P[:, min_index]
+      used[min_index] = True
     
   return P_matched
   
@@ -49,7 +58,7 @@ def plot_icp(X, P, P0, i, e):
   time.sleep(0.5)
   
   
-def icp(X, P, matching_flag=True):
+def icp(X, P, matching_flag=True, tol=1e-5):
   
   P0 = P
   
@@ -57,6 +66,7 @@ def icp(X, P, matching_flag=True):
   plt.ion()
   plt.show()
   
+  errors = []
   for i in range(0,15):
         
     #calculate RMSE
@@ -64,7 +74,14 @@ def icp(X, P, matching_flag=True):
     for j in range(0,P.shape[1]):
       e = e+math.pow(P[0,j]-X[0,j],2)+math.pow(P[1,j]-X[1,j],2)
     e = math.sqrt(e/P.shape[1])
+    errors.append(e)
+
+    if len(errors) >= 6 and max(errors[-5:]) - min(errors[-5:]) < tol:
+      print(f"Converged after {i} iterations.")
+      break
     
+    print(f"Iter {i}: RMSE = {e:.4f}")
+
     #plot icp
     plot_icp(X,P,P0,i,e)
     
@@ -87,15 +104,13 @@ def icp(X, P, matching_flag=True):
     
     #TODO: Check for reflection and correct if necessary
     if np.linalg.det(R) < 0:
-        V[-1,:] *= -1
+        V[1,:] *= -1
         R = np.dot(U,V)
     
     t = mx-np.dot(R,mp)
     
     #apply transformation
     P = np.dot(R,P)+t
-
-    print(f"Iter {i}: RMSE = {e:.4f}")
     
   plt.ioff()
   plt.show()
@@ -131,9 +146,9 @@ def main():
   P4 = np.transpose(np.random.permutation(np.transpose(P2)))
   
   #execute icp
-  # icp(X,P1,False)
-  # icp(X,P2,False)
-  # icp(X,P3,True)
+  icp(X,P1,False)
+  icp(X,P2,False)
+  icp(X,P3,True)
   icp(X,P4,True)
     
 if __name__ == "__main__":
