@@ -80,19 +80,31 @@ private:
         /// la convergencia de ICP, si la rotación no converge por debajo de un límite 
         // de rotación, no actualicen current_pose_, de lo contrario divergerá.
         
-        icp(current_cloud, stable_cloud_, ;
+        // Filtrar puntos NaN
+        pcl::PointCloud<pcl::PointXYZ>::Ptr current_filtered(new pcl::PointCloud<pcl::PointXYZ>);
+        current_filtered->reserve(current_cloud->size());
+        for (const auto &p : current_cloud->points) {
+            if (std::isfinite(p.x) && std::isfinite(p.y) && std::isfinite(p.z)) {
+                current_filtered->push_back(p);
+            }
+        }
+
+        pcl::PointCloud<pcl::PointXYZ>::Ptr stable_filtered(new pcl::PointCloud<pcl::PointXYZ>);
+        stable_filtered->reserve(stable_cloud_->size());
+        for (const auto &p : stable_cloud_->points) {
+            if (std::isfinite(p.x) && std::isfinite(p.y) && std::isfinite(p.z)) {
+                stable_filtered->push_back(p);
+            }
+        }
+
         
         stable_cloud_ = current_cloud; // Con la convergencia aprobada, actualizar la nube estable.
     }
 
-    // void icp(const pcl::PointCloud<pcl::PointXYZ>::Ptr& source,
-    //          const pcl::PointCloud<pcl::PointXYZ>::Ptr& target,
-    //          Eigen::Matrix4f& final_transform)
-    // {
-        
 
 
-    // }
+    
+
 
     void update_pose(const Eigen::Matrix4f& transform)
     {
