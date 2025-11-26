@@ -1,0 +1,35 @@
+[33mCMake Warning (dev) at /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:143 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable EIGEN_ROOT is set to:
+
+    /home/luqo/miniforge3/envs/ros_env/include/eigen3
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:296 (find_eigen)
+  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:549 (find_external_library)
+  CMakeLists.txt:22 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+[33mCMake Warning (dev) at /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/Modules/FindFLANN.cmake:45 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable FLANN_ROOT is set to:
+
+    /home/luqo/miniforge3/envs/ros_env
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:253 (find_package)
+  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:298 (find_flann)
+  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:549 (find_external_library)
+  CMakeLists.txt:22 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m

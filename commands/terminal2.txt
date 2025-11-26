@@ -1,0 +1,5 @@
+conda activate ros_env
+cd ~/Documents/Robotica/TPs/Robotica-TP6//turtlebot3_custom_simulation
+colcon build
+source install/setup.bash
+ros2 launch turtlebot3_custom_simulation custom_room.launch.py

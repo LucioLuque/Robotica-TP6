@@ -1,0 +1,796 @@
+[0.000000] (-) TimerEvent: {}
+[0.001106] (turtlebot3_custom_simulation) JobQueued: {'identifier': 'turtlebot3_custom_simulation', 'dependencies': OrderedDict()}
+[0.001337] (turtlebot3_icp_localization) JobQueued: {'identifier': 'turtlebot3_icp_localization', 'dependencies': OrderedDict()}
+[0.001417] (turtlebot3_custom_simulation) JobStarted: {'identifier': 'turtlebot3_custom_simulation'}
+[0.013567] (turtlebot3_icp_localization) JobStarted: {'identifier': 'turtlebot3_icp_localization'}
+[0.025790] (turtlebot3_custom_simulation) JobProgress: {'identifier': 'turtlebot3_custom_simulation', 'progress': 'cmake'}
+[0.026306] (turtlebot3_custom_simulation) Command: {'cmd': ['/home/luqo/miniforge3/envs/ros_env/bin/cmake', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation', '-DCMAKE_INSTALL_PREFIX=/home/luqo/Documents/Robotica/TPs/Robotica-TP6/install/turtlebot3_custom_simulation'], 'cwd': '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_custom_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'luqo'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/gazebo-11/plugins:/home/luqo/miniforge3/envs/ros_env/opt/rviz_ogre_vendor/lib'), ('HOME', '/home/luqo'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('SYSTEMD_EXEC_PID', '6209'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/luqo/miniforge3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install:/home/luqo/Documents/Robotica/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luqo'), ('_', '/home/luqo/miniforge3/envs/ros_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'luqo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/luqo/miniforge3/bin:/home/luqo/miniforge3/condabin:/home/luqo/miniforge3/envs/ros_env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/MACHINE:@/tmp/.ICE-unix/1608,unix/MACHINE:/tmp/.ICE-unix/1608'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/91bb3c59_16aa_4c1a_9e6b_ce0c3b6d3ed0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MAMBA_ROOT_PREFIX', '/home/luqo/.local/share/mamba'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.01IQG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.148'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XML_CATALOG_FILES', 'file:///home/luqo/miniforge3/etc/xml/catalog file:///etc/xml/catalog'), ('AMENT_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization:/home/luqo/Documents/Robotica/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/luqo/miniforge3/envs/ros_env'), ('CONDA_PYTHON_EXE', '/home/luqo/miniforge3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('_CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('MAMBA_EXE', '/home/luqo/miniforge3/bin/mamba'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_custom_simulation'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/luqo/miniforge3/envs/ros_env/lib/python311/site-packages:/home/luqo/miniforge3/envs/ros_env/lib/python3.11/site-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('CONDA_PREFIX', '/home/luqo/miniforge3'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization:/home/luqo/Documents/Robotica/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/luqo/miniforge3/envs/ros_env')]), 'shell': False}
+[0.033637] (turtlebot3_icp_localization) JobProgress: {'identifier': 'turtlebot3_icp_localization', 'progress': 'cmake'}
+[0.034424] (turtlebot3_icp_localization) Command: {'cmd': ['/home/luqo/miniforge3/envs/ros_env/bin/cmake', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization', '-DCMAKE_INSTALL_PREFIX=/home/luqo/Documents/Robotica/TPs/Robotica-TP6/install/turtlebot3_icp_localization'], 'cwd': '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_icp_localization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'luqo'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/gazebo-11/plugins:/home/luqo/miniforge3/envs/ros_env/opt/rviz_ogre_vendor/lib'), ('HOME', '/home/luqo'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('SYSTEMD_EXEC_PID', '6209'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/luqo/miniforge3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install:/home/luqo/Documents/Robotica/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luqo'), ('_', '/home/luqo/miniforge3/envs/ros_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'luqo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/luqo/miniforge3/bin:/home/luqo/miniforge3/condabin:/home/luqo/miniforge3/envs/ros_env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/MACHINE:@/tmp/.ICE-unix/1608,unix/MACHINE:/tmp/.ICE-unix/1608'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/91bb3c59_16aa_4c1a_9e6b_ce0c3b6d3ed0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MAMBA_ROOT_PREFIX', '/home/luqo/.local/share/mamba'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.01IQG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.148'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XML_CATALOG_FILES', 'file:///home/luqo/miniforge3/etc/xml/catalog file:///etc/xml/catalog'), ('AMENT_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization:/home/luqo/Documents/Robotica/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/luqo/miniforge3/envs/ros_env'), ('CONDA_PYTHON_EXE', '/home/luqo/miniforge3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('_CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('MAMBA_EXE', '/home/luqo/miniforge3/bin/mamba'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_icp_localization'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/luqo/miniforge3/envs/ros_env/lib/python311/site-packages:/home/luqo/miniforge3/envs/ros_env/lib/python3.11/site-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('CONDA_PREFIX', '/home/luqo/miniforge3'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization:/home/luqo/Documents/Robotica/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/luqo/miniforge3/envs/ros_env')]), 'shell': False}
+[0.099618] (-) TimerEvent: {}
+[0.160528] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- The C compiler identification is GNU 14.3.0\n'}
+[0.161400] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- The C compiler identification is GNU 14.3.0\n'}
+[0.199790] (-) TimerEvent: {}
+[0.300251] (-) TimerEvent: {}
+[0.400656] (-) TimerEvent: {}
+[0.482460] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 14.3.0\n'}
+[0.486609] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 14.3.0\n'}
+[0.500842] (-) TimerEvent: {}
+[0.522807] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.529763] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.601019] (-) TimerEvent: {}
+[0.701391] (-) TimerEvent: {}
+[0.724867] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.728503] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.756841] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Check for working C compiler: /home/luqo/miniforge3/envs/ros_env/bin/cc - skipped\n'}
+[0.757214] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.757953] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.767986] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Check for working C compiler: /home/luqo/miniforge3/envs/ros_env/bin/cc - skipped\n'}
+[0.768820] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.770211] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.780632] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.793355] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.801564] (-) TimerEvent: {}
+[0.901900] (-) TimerEvent: {}
+[1.002265] (-) TimerEvent: {}
+[1.102615] (-) TimerEvent: {}
+[1.176539] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.184847] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.202762] (-) TimerEvent: {}
+[1.208850] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Check for working CXX compiler: /home/luqo/miniforge3/envs/ros_env/bin/c++ - skipped\n'}
+[1.209529] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.210541] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.223814] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/home/luqo/miniforge3/envs/ros_env/share/ament_cmake/cmake)\n'}
+[1.224574] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Check for working CXX compiler: /home/luqo/miniforge3/envs/ros_env/bin/c++ - skipped\n'}
+[1.225076] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.226033] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.239318] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/home/luqo/miniforge3/envs/ros_env/share/ament_cmake/cmake)\n'}
+[1.302922] (-) TimerEvent: {}
+[1.403229] (-) TimerEvent: {}
+[1.503542] (-) TimerEvent: {}
+[1.603931] (-) TimerEvent: {}
+[1.704326] (-) TimerEvent: {}
+[1.804675] (-) TimerEvent: {}
+[1.904995] (-) TimerEvent: {}
+[2.005339] (-) TimerEvent: {}
+[2.105682] (-) TimerEvent: {}
+[2.160678] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found Python3: /home/luqo/miniforge3/bin/python3.12 (found version "3.12.11") found components: Interpreter \n'}
+[2.186691] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found Python3: /home/luqo/miniforge3/bin/python3.12 (found version "3.12.11") found components: Interpreter \n'}
+[2.205841] (-) TimerEvent: {}
+[2.306252] (-) TimerEvent: {}
+[2.406595] (-) TimerEvent: {}
+[2.506909] (-) TimerEvent: {}
+[2.519015] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/home/luqo/miniforge3/envs/ros_env/share/rclcpp/cmake)\n'}
+[2.536746] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/home/luqo/miniforge3/envs/ros_env/share/geometry_msgs/cmake)\n'}
+[2.607113] (-) TimerEvent: {}
+[2.698295] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/home/luqo/miniforge3/envs/ros_env/share/rosidl_generator_c/cmake)\n'}
+[2.701408] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/home/luqo/miniforge3/envs/ros_env/share/rosidl_generator_c/cmake)\n'}
+[2.707251] (-) TimerEvent: {}
+[2.724170] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/home/luqo/miniforge3/envs/ros_env/share/rosidl_adapter/cmake)\n'}
+[2.726338] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/home/luqo/miniforge3/envs/ros_env/share/rosidl_adapter/cmake)\n'}
+[2.759662] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/home/luqo/miniforge3/envs/ros_env/share/rosidl_generator_cpp/cmake)\n'}
+[2.761009] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/home/luqo/miniforge3/envs/ros_env/share/rosidl_generator_cpp/cmake)\n'}
+[2.807430] (-) TimerEvent: {}
+[2.809551] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.809972] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.881541] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.881897] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.907871] (-) TimerEvent: {}
+[3.008505] (-) TimerEvent: {}
+[3.108884] (-) TimerEvent: {}
+[3.155844] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Checking for module 'yaml-0.1'\n"}
+[3.203433] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/home/luqo/miniforge3/envs/ros_env/share/nav_msgs/cmake)\n'}
+[3.209030] (-) TimerEvent: {}
+[3.299756] (turtlebot3_icp_localization) StdoutLine: {'line': b'--   Found yaml-0.1, version 0.2.5\n'}
+[3.309213] (-) TimerEvent: {}
+[3.409516] (-) TimerEvent: {}
+[3.415353] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/home/luqo/miniforge3/envs/ros_env/share/rclcpp/cmake)\n'}
+[3.509673] (-) TimerEvent: {}
+[3.609975] (-) TimerEvent: {}
+[3.655729] (turtlebot3_custom_simulation) StdoutLine: {'line': b"-- Checking for module 'yaml-0.1'\n"}
+[3.700895] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/home/luqo/miniforge3/envs/ros_env/share/rmw_implementation_cmake/cmake)\n'}
+[3.710150] (-) TimerEvent: {}
+[3.715375] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/home/luqo/miniforge3/envs/ros_env/share/rmw_fastrtps_cpp/cmake)\n'}
+[3.793089] (turtlebot3_custom_simulation) StdoutLine: {'line': b'--   Found yaml-0.1, version 0.2.5\n'}
+[3.810296] (-) TimerEvent: {}
+[3.910586] (-) TimerEvent: {}
+[4.010905] (-) TimerEvent: {}
+[4.111258] (-) TimerEvent: {}
+[4.207548] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/home/luqo/miniforge3/envs/ros_env/share/rmw_implementation_cmake/cmake)\n'}
+[4.211379] (-) TimerEvent: {}
+[4.227583] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/home/luqo/miniforge3/envs/ros_env/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.311550] (-) TimerEvent: {}
+[4.411855] (-) TimerEvent: {}
+[4.412835] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found OpenSSL: /home/luqo/miniforge3/envs/ros_env/lib/libcrypto.so (found version "3.6.0")  \n'}
+[4.473752] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found FastRTPS: /home/luqo/miniforge3/envs/ros_env/include  \n'}
+[4.512017] (-) TimerEvent: {}
+[4.583845] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[4.612165] (-) TimerEvent: {}
+[4.620350] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[4.712317] (-) TimerEvent: {}
+[4.801401] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[4.803832] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[4.812454] (-) TimerEvent: {}
+[4.912780] (-) TimerEvent: {}
+[4.943684] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found OpenSSL: /home/luqo/miniforge3/envs/ros_env/lib/libcrypto.so (found version "3.6.0")  \n'}
+[5.001781] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found FastRTPS: /home/luqo/miniforge3/envs/ros_env/include  \n'}
+[5.012938] (-) TimerEvent: {}
+[5.113272] (-) TimerEvent: {}
+[5.132429] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/home/luqo/miniforge3/envs/ros_env/share/sensor_msgs/cmake)\n'}
+[5.136202] (turtlebot3_custom_simulation) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[5.170740] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[5.213420] (-) TimerEvent: {}
+[5.313716] (-) TimerEvent: {}
+[5.367452] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[5.371897] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[5.413879] (-) TimerEvent: {}
+[5.514212] (-) TimerEvent: {}
+[5.614549] (-) TimerEvent: {}
+[5.643403] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/home/luqo/miniforge3/envs/ros_env/share/nav_msgs/cmake)\n'}
+[5.709225] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/home/luqo/miniforge3/envs/ros_env/share/sensor_msgs/cmake)\n'}
+[5.714697] (-) TimerEvent: {}
+[5.815013] (-) TimerEvent: {}
+[5.852612] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.5 (/home/luqo/miniforge3/envs/ros_env/share/tf2_ros/cmake)\n'}
+[5.915274] (-) TimerEvent: {}
+[5.923904] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found tf2: 0.25.5 (/home/luqo/miniforge3/envs/ros_env/share/tf2/cmake)\n'}
+[5.963232] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found tf2_msgs: 0.25.5 (/home/luqo/miniforge3/envs/ros_env/share/tf2_msgs/cmake)\n'}
+[6.015473] (-) TimerEvent: {}
+[6.115814] (-) TimerEvent: {}
+[6.216227] (-) TimerEvent: {}
+[6.316578] (-) TimerEvent: {}
+[6.335996] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found turtlebot3_msgs: 2.2.3 (/home/luqo/miniforge3/envs/ros_env/share/turtlebot3_msgs/cmake)\n'}
+[6.416747] (-) TimerEvent: {}
+[6.517083] (-) TimerEvent: {}
+[6.617491] (-) TimerEvent: {}
+[6.717841] (-) TimerEvent: {}
+[6.750205] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.0 (/home/luqo/miniforge3/envs/ros_env/share/pcl_conversions/cmake)\n'}
+[6.818031] (-) TimerEvent: {}
+[6.878084] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Configuring done (6.8s)\n'}
+[6.908448] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[6.912857] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Build files have been written to: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_custom_simulation\n'}
+[6.918217] (-) TimerEvent: {}
+[6.934842] (turtlebot3_custom_simulation) CommandEnded: {'returncode': 0}
+[6.936171] (turtlebot3_custom_simulation) JobProgress: {'identifier': 'turtlebot3_custom_simulation', 'progress': 'build'}
+[6.937687] (turtlebot3_custom_simulation) Command: {'cmd': ['/home/luqo/miniforge3/envs/ros_env/bin/cmake', '--build', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_custom_simulation', '--', '-j8', '-l8'], 'cwd': '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_custom_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'luqo'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/gazebo-11/plugins:/home/luqo/miniforge3/envs/ros_env/opt/rviz_ogre_vendor/lib'), ('HOME', '/home/luqo'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('SYSTEMD_EXEC_PID', '6209'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/luqo/miniforge3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install:/home/luqo/Documents/Robotica/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luqo'), ('_', '/home/luqo/miniforge3/envs/ros_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'luqo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/luqo/miniforge3/bin:/home/luqo/miniforge3/condabin:/home/luqo/miniforge3/envs/ros_env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/MACHINE:@/tmp/.ICE-unix/1608,unix/MACHINE:/tmp/.ICE-unix/1608'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/91bb3c59_16aa_4c1a_9e6b_ce0c3b6d3ed0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MAMBA_ROOT_PREFIX', '/home/luqo/.local/share/mamba'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.01IQG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.148'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XML_CATALOG_FILES', 'file:///home/luqo/miniforge3/etc/xml/catalog file:///etc/xml/catalog'), ('AMENT_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization:/home/luqo/Documents/Robotica/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/luqo/miniforge3/envs/ros_env'), ('CONDA_PYTHON_EXE', '/home/luqo/miniforge3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('_CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('MAMBA_EXE', '/home/luqo/miniforge3/bin/mamba'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_custom_simulation'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/luqo/miniforge3/envs/ros_env/lib/python311/site-packages:/home/luqo/miniforge3/envs/ros_env/lib/python3.11/site-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('CONDA_PREFIX', '/home/luqo/miniforge3'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization:/home/luqo/Documents/Robotica/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/luqo/miniforge3/envs/ros_env')]), 'shell': False}
+[7.018301] (-) TimerEvent: {}
+[7.032664] (turtlebot3_custom_simulation) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_custom_simulation.dir/src/turtlebot3_custom_simulation.cpp.o\x1b[0m\n'}
+[7.056440] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found laser_geometry: 2.4.0 (/home/luqo/miniforge3/envs/ros_env/share/laser_geometry/cmake)\n'}
+[7.118453] (-) TimerEvent: {}
+[7.132303] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.5 (/home/luqo/miniforge3/envs/ros_env/share/tf2_geometry_msgs/cmake)\n'}
+[7.166612] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[7.166977] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[7.218616] (-) TimerEvent: {}
+[7.233466] (turtlebot3_icp_localization) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:143 (find_package):\n'}
+[7.233772] (turtlebot3_icp_localization) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[7.233859] (turtlebot3_icp_localization) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[7.233939] (turtlebot3_icp_localization) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[7.234017] (turtlebot3_icp_localization) StderrLine: {'line': b'\n'}
+[7.234093] (turtlebot3_icp_localization) StderrLine: {'line': b'  CMake variable EIGEN_ROOT is set to:\n'}
+[7.234169] (turtlebot3_icp_localization) StderrLine: {'line': b'\n'}
+[7.234275] (turtlebot3_icp_localization) StderrLine: {'line': b'    /home/luqo/miniforge3/envs/ros_env/include/eigen3\n'}
+[7.234355] (turtlebot3_icp_localization) StderrLine: {'line': b'\n'}
+[7.234429] (turtlebot3_icp_localization) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[7.234505] (turtlebot3_icp_localization) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[7.234592] (turtlebot3_icp_localization) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[7.234679] (turtlebot3_icp_localization) StderrLine: {'line': b'  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:296 (find_eigen)\n'}
+[7.234756] (turtlebot3_icp_localization) StderrLine: {'line': b'  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:549 (find_external_library)\n'}
+[7.234830] (turtlebot3_icp_localization) StderrLine: {'line': b'  CMakeLists.txt:22 (find_package)\n'}
+[7.234902] (turtlebot3_icp_localization) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[7.234975] (turtlebot3_icp_localization) StderrLine: {'line': b'\x1b[0m\n'}
+[7.265376] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[7.318810] (-) TimerEvent: {}
+[7.403211] (turtlebot3_icp_localization) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[7.418975] (-) TimerEvent: {}
+[7.519317] (-) TimerEvent: {}
+[7.619644] (-) TimerEvent: {}
+[7.719987] (-) TimerEvent: {}
+[7.792591] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found Eigen: /home/luqo/miniforge3/envs/ros_env/include/eigen3 (Required is at least version "3.3") \n'}
+[7.792896] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Eigen found (include: /home/luqo/miniforge3/envs/ros_env/include/eigen3, version: 3.4.0)\n'}
+[7.815428] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found Boost: /home/luqo/miniforge3/envs/ros_env/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found suitable version "1.82.0", minimum required is "1.65.0") found components: system filesystem iostreams \n'}
+[7.818024] (turtlebot3_icp_localization) StderrLine: {'line': b'\x1b[33mCMake Warning (dev) at /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/Modules/FindFLANN.cmake:45 (find_package):\n'}
+[7.818269] (turtlebot3_icp_localization) StderrLine: {'line': b'  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT\n'}
+[7.818361] (turtlebot3_icp_localization) StderrLine: {'line': b'  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the\n'}
+[7.818434] (turtlebot3_icp_localization) StderrLine: {'line': b'  cmake_policy command to set the policy and suppress this warning.\n'}
+[7.818504] (turtlebot3_icp_localization) StderrLine: {'line': b'\n'}
+[7.818605] (turtlebot3_icp_localization) StderrLine: {'line': b'  CMake variable FLANN_ROOT is set to:\n'}
+[7.818698] (turtlebot3_icp_localization) StderrLine: {'line': b'\n'}
+[7.818768] (turtlebot3_icp_localization) StderrLine: {'line': b'    /home/luqo/miniforge3/envs/ros_env\n'}
+[7.818837] (turtlebot3_icp_localization) StderrLine: {'line': b'\n'}
+[7.818906] (turtlebot3_icp_localization) StderrLine: {'line': b'  For compatibility, find_package is ignoring the variable, but code in a\n'}
+[7.818977] (turtlebot3_icp_localization) StderrLine: {'line': b'  .cmake module might still use it.\n'}
+[7.819046] (turtlebot3_icp_localization) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[7.819115] (turtlebot3_icp_localization) StderrLine: {'line': b'  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:253 (find_package)\n'}
+[7.819211] (turtlebot3_icp_localization) StderrLine: {'line': b'  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:298 (find_flann)\n'}
+[7.819312] (turtlebot3_icp_localization) StderrLine: {'line': b'  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:549 (find_external_library)\n'}
+[7.819384] (turtlebot3_icp_localization) StderrLine: {'line': b'  CMakeLists.txt:22 (find_package)\n'}
+[7.819454] (turtlebot3_icp_localization) StderrLine: {'line': b'This warning is for project developers.  Use -Wno-dev to suppress it.\n'}
+[7.819525] (turtlebot3_icp_localization) StderrLine: {'line': b'\x1b[0m\n'}
+[7.820041] (-) TimerEvent: {}
+[7.820919] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found flann version 1.9.2\n'}
+[7.907399] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found GLEW: /home/luqo/miniforge3/envs/ros_env/lib/libGLEW.so  \n'}
+[7.920309] (-) TimerEvent: {}
+[7.926368] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found OpenGL: /home/luqo/miniforge3/envs/ros_env/lib/libOpenGL.so  found components: OpenGL GLX \n'}
+[7.929208] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found utf8cpp: /home/luqo/miniforge3/envs/ros_env/include  \n'}
+[7.955239] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found ZLIB: /home/luqo/miniforge3/envs/ros_env/lib/libz.so (found version "1.2.13")  \n'}
+[7.990896] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PNG: /home/luqo/miniforge3/envs/ros_env/lib/libpng.so (found version "1.6.43") \n'}
+[7.994120] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found nlohmann_json: /home/luqo/miniforge3/envs/ros_env/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.12.0") \n'}
+[8.020482] (-) TimerEvent: {}
+[8.030600] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found Eigen3: /home/luqo/miniforge3/envs/ros_env/include/eigen3 (found version "3.4.0") \n'}
+[8.110342] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found X11: /home/luqo/miniforge3/envs/ros_env/include   \n'}
+[8.111028] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /home/luqo/miniforge3/envs/ros_env/lib/libX11.so;/home/luqo/miniforge3/envs/ros_env/lib/libXext.so\n'}
+[8.120658] (-) TimerEvent: {}
+[8.221002] (-) TimerEvent: {}
+[8.321325] (-) TimerEvent: {}
+[8.339920] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for XOpenDisplay in /home/luqo/miniforge3/envs/ros_env/lib/libX11.so;/home/luqo/miniforge3/envs/ros_env/lib/libXext.so - found\n'}
+[8.340335] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for gethostbyname\n'}
+[8.421504] (-) TimerEvent: {}
+[8.521900] (-) TimerEvent: {}
+[8.560953] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for gethostbyname - found\n'}
+[8.561507] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for connect\n'}
+[8.622084] (-) TimerEvent: {}
+[8.722412] (-) TimerEvent: {}
+[8.768091] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for connect - found\n'}
+[8.768563] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for remove\n'}
+[8.822579] (-) TimerEvent: {}
+[8.922897] (-) TimerEvent: {}
+[8.981858] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for remove - found\n'}
+[8.982402] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for shmat\n'}
+[9.023111] (-) TimerEvent: {}
+[9.123455] (-) TimerEvent: {}
+[9.177837] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for shmat - found\n'}
+[9.178356] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE\n'}
+[9.223642] (-) TimerEvent: {}
+[9.323992] (-) TimerEvent: {}
+[9.380552] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for IceConnectionNumber in ICE - found\n'}
+[9.424169] (-) TimerEvent: {}
+[9.524536] (-) TimerEvent: {}
+[9.624843] (-) TimerEvent: {}
+[9.725138] (-) TimerEvent: {}
+[9.825462] (-) TimerEvent: {}
+[9.925771] (-) TimerEvent: {}
+[10.026104] (-) TimerEvent: {}
+[10.082285] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found EXPAT: /home/luqo/miniforge3/envs/ros_env/lib/libexpat.so (found version "2.5.0") \n'}
+[10.086646] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found double-conversion: /home/luqo/miniforge3/envs/ros_env/lib/libdouble-conversion.so  \n'}
+[10.092725] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found LZ4: /home/luqo/miniforge3/envs/ros_env/lib/liblz4.so (found version "1.9.4") \n'}
+[10.097278] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found LZMA: /home/luqo/miniforge3/envs/ros_env/lib/liblzma.so (found version "5.8.1") \n'}
+[10.126339] (-) TimerEvent: {}
+[10.132284] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found JPEG: /home/luqo/miniforge3/envs/ros_env/lib/libjpeg.so (found version "80") \n'}
+[10.156599] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found TIFF: /home/luqo/miniforge3/envs/ros_env/lib/libtiff.so (found version "4.6.0")  \n'}
+[10.177913] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found Freetype: /home/luqo/miniforge3/envs/ros_env/lib/libfreetype.so (found version "2.12.1") \n'}
+[10.226507] (-) TimerEvent: {}
+[10.326867] (-) TimerEvent: {}
+[10.427280] (-) TimerEvent: {}
+[10.527613] (-) TimerEvent: {}
+[10.627948] (-) TimerEvent: {}
+[10.674701] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Eigen found (include: /home/luqo/miniforge3/envs/ros_env/include/eigen3, version: 3.4.0)\n'}
+[10.728168] (-) TimerEvent: {}
+[10.828603] (-) TimerEvent: {}
+[10.928943] (-) TimerEvent: {}
+[11.029508] (-) TimerEvent: {}
+[11.071405] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[11.129707] (-) TimerEvent: {}
+[11.230099] (-) TimerEvent: {}
+[11.330483] (-) TimerEvent: {}
+[11.430841] (-) TimerEvent: {}
+[11.449486] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_COMMON\n'}
+[11.452234] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_COMMON: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_common.so  \n'}
+[11.452687] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_KDTREE\n'}
+[11.455389] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_KDTREE: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_kdtree.so  \n'}
+[11.455862] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_OCTREE\n'}
+[11.458340] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_OCTREE: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_octree.so  \n'}
+[11.458817] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_SEARCH\n'}
+[11.461424] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_SEARCH: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_search.so  \n'}
+[11.461874] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_SAMPLE_CONSENSUS\n'}
+[11.464550] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_sample_consensus.so  \n'}
+[11.465031] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_FILTERS\n'}
+[11.467379] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_FILTERS: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_filters.so  \n'}
+[11.467795] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_2D\n'}
+[11.468322] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_2D: /home/luqo/miniforge3/envs/ros_env/include/pcl-1.13  \n'}
+[11.468761] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_GEOMETRY\n'}
+[11.469272] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /home/luqo/miniforge3/envs/ros_env/include/pcl-1.13  \n'}
+[11.469643] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_IO\n'}
+[11.472857] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_IO: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_io.so  \n'}
+[11.473332] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_FEATURES\n'}
+[11.475873] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_FEATURES: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_features.so  \n'}
+[11.476463] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_ML\n'}
+[11.479015] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_ML: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_ml.so  \n'}
+[11.479460] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_SEGMENTATION\n'}
+[11.481819] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_segmentation.so  \n'}
+[11.482473] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_VISUALIZATION\n'}
+[11.484902] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_visualization.so  \n'}
+[11.485391] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_SURFACE\n'}
+[11.487692] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_SURFACE: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_surface.so  \n'}
+[11.488235] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_REGISTRATION\n'}
+[11.490730] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_registration.so  \n'}
+[11.491450] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_KEYPOINTS\n'}
+[11.493942] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_keypoints.so  \n'}
+[11.494493] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_TRACKING\n'}
+[11.497044] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_TRACKING: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_tracking.so  \n'}
+[11.497538] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_RECOGNITION\n'}
+[11.500005] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_recognition.so  \n'}
+[11.500752] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_STEREO\n'}
+[11.504172] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_STEREO: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_stereo.so  \n'}
+[11.504585] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_OUTOFCORE\n'}
+[11.507142] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_outofcore.so  \n'}
+[11.507703] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- looking for PCL_PEOPLE\n'}
+[11.510164] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_people.so  \n'}
+[11.512284] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::iostreams;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::RenderingContextOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  \n'}
+[11.531047] (-) TimerEvent: {}
+[11.631448] (-) TimerEvent: {}
+[11.642471] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/home/luqo/miniforge3/envs/ros_env/share/ament_lint_auto/cmake)\n'}
+[11.731625] (-) TimerEvent: {}
+[11.831996] (-) TimerEvent: {}
+[11.932392] (-) TimerEvent: {}
+[11.957673] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[11.958102] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/include>\n'}
+[11.958313] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[11.963079] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[11.970884] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[11.975498] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[12.003454] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[12.003819] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[12.008109] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[12.011277] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Configuring done (12.0s)\n'}
+[12.032651] (-) TimerEvent: {}
+[12.106427] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Generating done (0.1s)\n'}
+[12.114372] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Build files have been written to: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_icp_localization\n'}
+[12.132846] (-) TimerEvent: {}
+[12.171502] (turtlebot3_icp_localization) CommandEnded: {'returncode': 0}
+[12.173601] (turtlebot3_icp_localization) JobProgress: {'identifier': 'turtlebot3_icp_localization', 'progress': 'build'}
+[12.174913] (turtlebot3_icp_localization) Command: {'cmd': ['/home/luqo/miniforge3/envs/ros_env/bin/cmake', '--build', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_icp_localization', '--', '-j8', '-l8'], 'cwd': '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_icp_localization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(base)'), ('USER', 'luqo'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/gazebo-11/plugins:/home/luqo/miniforge3/envs/ros_env/opt/rviz_ogre_vendor/lib'), ('HOME', '/home/luqo'), ('CONDA_SHLVL', '1'), ('OLDPWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('SYSTEMD_EXEC_PID', '6209'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('_CONDA_ROOT', '/home/luqo/miniforge3'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install:/home/luqo/Documents/Robotica/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luqo'), ('_', '/home/luqo/miniforge3/envs/ros_env/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'luqo'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/luqo/miniforge3/bin:/home/luqo/miniforge3/condabin:/home/luqo/miniforge3/envs/ros_env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/MACHINE:@/tmp/.ICE-unix/1608,unix/MACHINE:/tmp/.ICE-unix/1608'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/91bb3c59_16aa_4c1a_9e6b_ce0c3b6d3ed0'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('MAMBA_ROOT_PREFIX', '/home/luqo/.local/share/mamba'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.01IQG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.148'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XML_CATALOG_FILES', 'file:///home/luqo/miniforge3/etc/xml/catalog file:///etc/xml/catalog'), ('AMENT_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization:/home/luqo/Documents/Robotica/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/luqo/miniforge3/envs/ros_env'), ('CONDA_PYTHON_EXE', '/home/luqo/miniforge3/bin/python'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CONDA_DEFAULT_ENV', 'base'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('_CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('MAMBA_EXE', '/home/luqo/miniforge3/bin/mamba'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_icp_localization'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/luqo/miniforge3/envs/ros_env/lib/python311/site-packages:/home/luqo/miniforge3/envs/ros_env/lib/python3.11/site-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('CONDA_PREFIX', '/home/luqo/miniforge3'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization:/home/luqo/Documents/Robotica/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/luqo/miniforge3/envs/ros_env')]), 'shell': False}
+[12.232995] (-) TimerEvent: {}
+[12.282645] (turtlebot3_icp_localization) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/icp_localizer.dir/src/icp_localizer.cpp.o\x1b[0m\n'}
+[12.333257] (-) TimerEvent: {}
+[12.433598] (-) TimerEvent: {}
+[12.533943] (-) TimerEvent: {}
+[12.634331] (-) TimerEvent: {}
+[12.734675] (-) TimerEvent: {}
+[12.835021] (-) TimerEvent: {}
+[12.935388] (-) TimerEvent: {}
+[13.035752] (-) TimerEvent: {}
+[13.136160] (-) TimerEvent: {}
+[13.236560] (-) TimerEvent: {}
+[13.336926] (-) TimerEvent: {}
+[13.437329] (-) TimerEvent: {}
+[13.537685] (-) TimerEvent: {}
+[13.638031] (-) TimerEvent: {}
+[13.738478] (-) TimerEvent: {}
+[13.838849] (-) TimerEvent: {}
+[13.939239] (-) TimerEvent: {}
+[14.039570] (-) TimerEvent: {}
+[14.139909] (-) TimerEvent: {}
+[14.240299] (-) TimerEvent: {}
+[14.340696] (-) TimerEvent: {}
+[14.441088] (-) TimerEvent: {}
+[14.541478] (-) TimerEvent: {}
+[14.641857] (-) TimerEvent: {}
+[14.742208] (-) TimerEvent: {}
+[14.842551] (-) TimerEvent: {}
+[14.942908] (-) TimerEvent: {}
+[15.043326] (-) TimerEvent: {}
+[15.143725] (-) TimerEvent: {}
+[15.244219] (-) TimerEvent: {}
+[15.344609] (-) TimerEvent: {}
+[15.444939] (-) TimerEvent: {}
+[15.545333] (-) TimerEvent: {}
+[15.645737] (-) TimerEvent: {}
+[15.746125] (-) TimerEvent: {}
+[15.846527] (-) TimerEvent: {}
+[15.946933] (-) TimerEvent: {}
+[16.047369] (-) TimerEvent: {}
+[16.147741] (-) TimerEvent: {}
+[16.248092] (-) TimerEvent: {}
+[16.348480] (-) TimerEvent: {}
+[16.448827] (-) TimerEvent: {}
+[16.549229] (-) TimerEvent: {}
+[16.649589] (-) TimerEvent: {}
+[16.749974] (-) TimerEvent: {}
+[16.850380] (-) TimerEvent: {}
+[16.950743] (-) TimerEvent: {}
+[17.051099] (-) TimerEvent: {}
+[17.151478] (-) TimerEvent: {}
+[17.251841] (-) TimerEvent: {}
+[17.352248] (-) TimerEvent: {}
+[17.452612] (-) TimerEvent: {}
+[17.552957] (-) TimerEvent: {}
+[17.653333] (-) TimerEvent: {}
+[17.753647] (-) TimerEvent: {}
+[17.853994] (-) TimerEvent: {}
+[17.954353] (-) TimerEvent: {}
+[18.054707] (-) TimerEvent: {}
+[18.155080] (-) TimerEvent: {}
+[18.255539] (-) TimerEvent: {}
+[18.355890] (-) TimerEvent: {}
+[18.456297] (-) TimerEvent: {}
+[18.556656] (-) TimerEvent: {}
+[18.657007] (-) TimerEvent: {}
+[18.757394] (-) TimerEvent: {}
+[18.857747] (-) TimerEvent: {}
+[18.958076] (-) TimerEvent: {}
+[19.058444] (-) TimerEvent: {}
+[19.158759] (-) TimerEvent: {}
+[19.259078] (-) TimerEvent: {}
+[19.359419] (-) TimerEvent: {}
+[19.459762] (-) TimerEvent: {}
+[19.560076] (-) TimerEvent: {}
+[19.660418] (-) TimerEvent: {}
+[19.760737] (-) TimerEvent: {}
+[19.861128] (-) TimerEvent: {}
+[19.961532] (-) TimerEvent: {}
+[20.061919] (-) TimerEvent: {}
+[20.162314] (-) TimerEvent: {}
+[20.262640] (-) TimerEvent: {}
+[20.362971] (-) TimerEvent: {}
+[20.463353] (-) TimerEvent: {}
+[20.563773] (-) TimerEvent: {}
+[20.664088] (-) TimerEvent: {}
+[20.764454] (-) TimerEvent: {}
+[20.864772] (-) TimerEvent: {}
+[20.965109] (-) TimerEvent: {}
+[21.065974] (-) TimerEvent: {}
+[21.166359] (-) TimerEvent: {}
+[21.266698] (-) TimerEvent: {}
+[21.367054] (-) TimerEvent: {}
+[21.467927] (-) TimerEvent: {}
+[21.568337] (-) TimerEvent: {}
+[21.668880] (-) TimerEvent: {}
+[21.769288] (-) TimerEvent: {}
+[21.869645] (-) TimerEvent: {}
+[21.970012] (-) TimerEvent: {}
+[22.070322] (-) TimerEvent: {}
+[22.170725] (-) TimerEvent: {}
+[22.271095] (-) TimerEvent: {}
+[22.371457] (-) TimerEvent: {}
+[22.471831] (-) TimerEvent: {}
+[22.572169] (-) TimerEvent: {}
+[22.672509] (-) TimerEvent: {}
+[22.772861] (-) TimerEvent: {}
+[22.873235] (-) TimerEvent: {}
+[22.973599] (-) TimerEvent: {}
+[23.073951] (-) TimerEvent: {}
+[23.174350] (-) TimerEvent: {}
+[23.274737] (-) TimerEvent: {}
+[23.375088] (-) TimerEvent: {}
+[23.475553] (-) TimerEvent: {}
+[23.575878] (-) TimerEvent: {}
+[23.676235] (-) TimerEvent: {}
+[23.776572] (-) TimerEvent: {}
+[23.876910] (-) TimerEvent: {}
+[23.977320] (-) TimerEvent: {}
+[24.077691] (-) TimerEvent: {}
+[24.178063] (-) TimerEvent: {}
+[24.278418] (-) TimerEvent: {}
+[24.378784] (-) TimerEvent: {}
+[24.479124] (-) TimerEvent: {}
+[24.579770] (-) TimerEvent: {}
+[24.680395] (-) TimerEvent: {}
+[24.780987] (-) TimerEvent: {}
+[24.881318] (-) TimerEvent: {}
+[24.981678] (-) TimerEvent: {}
+[25.082050] (-) TimerEvent: {}
+[25.182716] (-) TimerEvent: {}
+[25.283069] (-) TimerEvent: {}
+[25.383447] (-) TimerEvent: {}
+[25.484057] (-) TimerEvent: {}
+[25.584418] (-) TimerEvent: {}
+[25.684896] (-) TimerEvent: {}
+[25.785284] (-) TimerEvent: {}
+[25.885777] (-) TimerEvent: {}
+[25.986417] (-) TimerEvent: {}
+[26.086985] (-) TimerEvent: {}
+[26.187650] (-) TimerEvent: {}
+[26.288205] (-) TimerEvent: {}
+[26.388675] (-) TimerEvent: {}
+[26.489045] (-) TimerEvent: {}
+[26.589438] (-) TimerEvent: {}
+[26.612093] (turtlebot3_custom_simulation) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turtlebot3_custom_simulation\x1b[0m\n'}
+[26.689676] (-) TimerEvent: {}
+[26.790120] (-) TimerEvent: {}
+[26.890630] (-) TimerEvent: {}
+[26.991364] (-) TimerEvent: {}
+[27.091874] (-) TimerEvent: {}
+[27.195539] (-) TimerEvent: {}
+[27.296041] (-) TimerEvent: {}
+[27.396449] (-) TimerEvent: {}
+[27.496853] (-) TimerEvent: {}
+[27.597283] (-) TimerEvent: {}
+[27.697754] (-) TimerEvent: {}
+[27.737940] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `_Py_Dealloc'\n"}
+[27.738466] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libsensor_msgs__rosidl_generator_py.so: undefined reference to `PyLong_FromLong'\n"}
+[27.738613] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyUnicode_AsUTF8String'\n"}
+[27.739761] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyImport_ImportModule'\n"}
+[27.740779] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_SetAttrString'\n"}
+[27.741894] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyExc_RuntimeError'\n"}
+[27.743461] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyUnicode_DecodeUTF8'\n"}
+[27.743915] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyErr_SetString'\n"}
+[27.744319] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_CallObject'\n"}
+[27.749355] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_GetBuffer'\n"}
+[27.750576] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyLong_AsSize_t'\n"}
+[27.751057] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/librcl_interfaces__rosidl_generator_py.so: undefined reference to `PyLong_FromUnsignedLongLong'\n"}
+[27.753620] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyList_SetItem'\n"}
+[27.754609] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/librcl_interfaces__rosidl_generator_py.so: undefined reference to `PyLong_AsUnsignedLongLong'\n"}
+[27.755438] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyBuffer_Release'\n"}
+[27.757593] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyLong_AsUnsignedLong'\n"}
+[27.757999] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PySequence_Size'\n"}
+[27.760300] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyFloat_FromDouble'\n"}
+[27.764011] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyBool_FromLong'\n"}
+[27.765324] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyLong_AsLong'\n"}
+[27.765600] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `_Py_TrueStruct'\n"}
+[27.766011] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_Size'\n"}
+[27.766310] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/librcl_interfaces__rosidl_generator_py.so: undefined reference to `PyLong_AsLongLong'\n"}
+[27.766647] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/librcl_interfaces__rosidl_generator_py.so: undefined reference to `PyLong_FromLongLong'\n"}
+[27.771389] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_GetAttrString'\n"}
+[27.771777] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyList_New'\n"}
+[27.772071] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyBuffer_ToContiguous'\n"}
+[27.772645] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_CallFunctionObjArgs'\n"}
+[27.772815] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_CheckBuffer'\n"}
+[27.773943] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyLong_FromUnsignedLong'\n"}
+[27.775212] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PySequence_Fast'\n"}
+[27.776327] (turtlebot3_custom_simulation) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyBytes_FromStringAndSize'\n"}
+[27.798073] (-) TimerEvent: {}
+[27.826734] (turtlebot3_custom_simulation) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[27.832054] (turtlebot3_custom_simulation) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/turtlebot3_custom_simulation.dir/build.make:215: turtlebot3_custom_simulation] Error 1\n'}
+[27.832514] (turtlebot3_custom_simulation) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/turtlebot3_custom_simulation.dir/all] Error 2\n'}
+[27.833407] (turtlebot3_custom_simulation) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[27.838981] (turtlebot3_custom_simulation) CommandEnded: {'returncode': 2}
+[27.898426] (-) TimerEvent: {}
+[27.916308] (turtlebot3_custom_simulation) JobEnded: {'identifier': 'turtlebot3_custom_simulation', 'rc': 2}
+[27.998563] (-) TimerEvent: {}
+[28.098895] (-) TimerEvent: {}
+[28.199254] (-) TimerEvent: {}
+[28.299649] (-) TimerEvent: {}
+[28.400131] (-) TimerEvent: {}
+[28.500630] (-) TimerEvent: {}
+[28.600984] (-) TimerEvent: {}
+[28.701362] (-) TimerEvent: {}
+[28.801705] (-) TimerEvent: {}
+[28.902046] (-) TimerEvent: {}
+[29.002414] (-) TimerEvent: {}
+[29.102793] (-) TimerEvent: {}
+[29.203256] (-) TimerEvent: {}
+[29.303646] (-) TimerEvent: {}
+[29.403996] (-) TimerEvent: {}
+[29.504379] (-) TimerEvent: {}
+[29.604816] (-) TimerEvent: {}
+[29.705192] (-) TimerEvent: {}
+[29.805534] (-) TimerEvent: {}
+[29.905899] (-) TimerEvent: {}
+[30.006244] (-) TimerEvent: {}
+[30.106610] (-) TimerEvent: {}
+[30.207005] (-) TimerEvent: {}
+[30.307747] (-) TimerEvent: {}
+[30.408148] (-) TimerEvent: {}
+[30.508831] (-) TimerEvent: {}
+[30.609270] (-) TimerEvent: {}
+[30.709637] (-) TimerEvent: {}
+[30.810017] (-) TimerEvent: {}
+[30.910393] (-) TimerEvent: {}
+[31.010812] (-) TimerEvent: {}
+[31.111242] (-) TimerEvent: {}
+[31.211628] (-) TimerEvent: {}
+[31.311971] (-) TimerEvent: {}
+[31.412331] (-) TimerEvent: {}
+[31.512727] (-) TimerEvent: {}
+[31.613333] (-) TimerEvent: {}
+[31.713726] (-) TimerEvent: {}
+[31.814117] (-) TimerEvent: {}
+[31.914777] (-) TimerEvent: {}
+[32.015302] (-) TimerEvent: {}
+[32.115840] (-) TimerEvent: {}
+[32.216215] (-) TimerEvent: {}
+[32.316595] (-) TimerEvent: {}
+[32.416985] (-) TimerEvent: {}
+[32.517414] (-) TimerEvent: {}
+[32.617801] (-) TimerEvent: {}
+[32.718159] (-) TimerEvent: {}
+[32.818586] (-) TimerEvent: {}
+[32.918967] (-) TimerEvent: {}
+[33.019352] (-) TimerEvent: {}
+[33.119704] (-) TimerEvent: {}
+[33.220039] (-) TimerEvent: {}
+[33.320411] (-) TimerEvent: {}
+[33.420774] (-) TimerEvent: {}
+[33.521163] (-) TimerEvent: {}
+[33.621551] (-) TimerEvent: {}
+[33.721891] (-) TimerEvent: {}
+[33.822291] (-) TimerEvent: {}
+[33.922670] (-) TimerEvent: {}
+[34.023004] (-) TimerEvent: {}
+[34.123328] (-) TimerEvent: {}
+[34.223707] (-) TimerEvent: {}
+[34.324342] (-) TimerEvent: {}
+[34.424686] (-) TimerEvent: {}
+[34.525051] (-) TimerEvent: {}
+[34.625398] (-) TimerEvent: {}
+[34.725766] (-) TimerEvent: {}
+[34.826097] (-) TimerEvent: {}
+[34.926464] (-) TimerEvent: {}
+[35.026831] (-) TimerEvent: {}
+[35.127168] (-) TimerEvent: {}
+[35.227524] (-) TimerEvent: {}
+[35.327915] (-) TimerEvent: {}
+[35.428301] (-) TimerEvent: {}
+[35.528888] (-) TimerEvent: {}
+[35.629455] (-) TimerEvent: {}
+[35.730064] (-) TimerEvent: {}
+[35.830540] (-) TimerEvent: {}
+[35.930863] (-) TimerEvent: {}
+[36.031211] (-) TimerEvent: {}
+[36.131541] (-) TimerEvent: {}
+[36.231927] (-) TimerEvent: {}
+[36.332257] (-) TimerEvent: {}
+[36.432574] (-) TimerEvent: {}
+[36.532901] (-) TimerEvent: {}
+[36.633222] (-) TimerEvent: {}
+[36.733507] (-) TimerEvent: {}
+[36.833793] (-) TimerEvent: {}
+[36.934073] (-) TimerEvent: {}
+[37.034303] (-) TimerEvent: {}
+[37.134681] (-) TimerEvent: {}
+[37.235040] (-) TimerEvent: {}
+[37.335316] (-) TimerEvent: {}
+[37.435607] (-) TimerEvent: {}
+[37.535940] (-) TimerEvent: {}
+[37.637348] (-) TimerEvent: {}
+[37.737788] (-) TimerEvent: {}
+[37.838166] (-) TimerEvent: {}
+[37.938524] (-) TimerEvent: {}
+[38.038861] (-) TimerEvent: {}
+[38.139228] (-) TimerEvent: {}
+[38.239547] (-) TimerEvent: {}
+[38.339858] (-) TimerEvent: {}
+[38.440165] (-) TimerEvent: {}
+[38.540509] (-) TimerEvent: {}
+[38.640846] (-) TimerEvent: {}
+[38.741171] (-) TimerEvent: {}
+[38.841511] (-) TimerEvent: {}
+[38.941832] (-) TimerEvent: {}
+[39.042121] (-) TimerEvent: {}
+[39.142424] (-) TimerEvent: {}
+[39.242715] (-) TimerEvent: {}
+[39.343026] (-) TimerEvent: {}
+[39.443389] (-) TimerEvent: {}
+[39.543669] (-) TimerEvent: {}
+[39.644026] (-) TimerEvent: {}
+[39.744306] (-) TimerEvent: {}
+[39.844629] (-) TimerEvent: {}
+[39.944977] (-) TimerEvent: {}
+[40.045325] (-) TimerEvent: {}
+[40.145660] (-) TimerEvent: {}
+[40.246043] (-) TimerEvent: {}
+[40.346382] (-) TimerEvent: {}
+[40.446662] (-) TimerEvent: {}
+[40.546976] (-) TimerEvent: {}
+[40.647366] (-) TimerEvent: {}
+[40.747859] (-) TimerEvent: {}
+[40.848160] (-) TimerEvent: {}
+[40.948490] (-) TimerEvent: {}
+[41.048793] (-) TimerEvent: {}
+[41.149171] (-) TimerEvent: {}
+[41.249564] (-) TimerEvent: {}
+[41.349891] (-) TimerEvent: {}
+[41.450309] (-) TimerEvent: {}
+[41.550672] (-) TimerEvent: {}
+[41.651077] (-) TimerEvent: {}
+[41.751396] (-) TimerEvent: {}
+[41.851678] (-) TimerEvent: {}
+[41.951964] (-) TimerEvent: {}
+[42.052269] (-) TimerEvent: {}
+[42.152642] (-) TimerEvent: {}
+[42.253074] (-) TimerEvent: {}
+[42.353505] (-) TimerEvent: {}
+[42.453852] (-) TimerEvent: {}
+[42.554225] (-) TimerEvent: {}
+[42.654635] (-) TimerEvent: {}
+[42.755067] (-) TimerEvent: {}
+[42.855710] (-) TimerEvent: {}
+[42.956099] (-) TimerEvent: {}
+[43.056482] (-) TimerEvent: {}
+[43.156978] (-) TimerEvent: {}
+[43.257517] (-) TimerEvent: {}
+[43.357878] (-) TimerEvent: {}
+[43.458246] (-) TimerEvent: {}
+[43.558614] (-) TimerEvent: {}
+[43.658995] (-) TimerEvent: {}
+[43.759457] (-) TimerEvent: {}
+[43.859912] (-) TimerEvent: {}
+[43.960338] (-) TimerEvent: {}
+[44.060838] (-) TimerEvent: {}
+[44.161316] (-) TimerEvent: {}
+[44.261638] (-) TimerEvent: {}
+[44.361936] (-) TimerEvent: {}
+[44.462275] (-) TimerEvent: {}
+[44.562596] (-) TimerEvent: {}
+[44.662920] (-) TimerEvent: {}
+[44.763316] (-) TimerEvent: {}
+[44.863757] (-) TimerEvent: {}
+[44.964132] (-) TimerEvent: {}
+[45.064572] (-) TimerEvent: {}
+[45.165286] (-) TimerEvent: {}
+[45.265639] (-) TimerEvent: {}
+[45.365991] (-) TimerEvent: {}
+[45.466322] (-) TimerEvent: {}
+[45.491549] (turtlebot3_icp_localization) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable icp_localizer\x1b[0m\n'}
+[45.566514] (-) TimerEvent: {}
+[45.666940] (-) TimerEvent: {}
+[45.767354] (-) TimerEvent: {}
+[45.867717] (-) TimerEvent: {}
+[45.968071] (-) TimerEvent: {}
+[46.068466] (-) TimerEvent: {}
+[46.168802] (-) TimerEvent: {}
+[46.269142] (-) TimerEvent: {}
+[46.369524] (-) TimerEvent: {}
+[46.469859] (-) TimerEvent: {}
+[46.570260] (-) TimerEvent: {}
+[46.670602] (-) TimerEvent: {}
+[46.770962] (-) TimerEvent: {}
+[46.871381] (-) TimerEvent: {}
+[46.971768] (-) TimerEvent: {}
+[47.072129] (-) TimerEvent: {}
+[47.172602] (-) TimerEvent: {}
+[47.273016] (-) TimerEvent: {}
+[47.373538] (-) TimerEvent: {}
+[47.474464] (-) TimerEvent: {}
+[47.575223] (-) TimerEvent: {}
+[47.675601] (-) TimerEvent: {}
+[47.775978] (-) TimerEvent: {}
+[47.876368] (-) TimerEvent: {}
+[47.976713] (-) TimerEvent: {}
+[48.077060] (-) TimerEvent: {}
+[48.177454] (-) TimerEvent: {}
+[48.277812] (-) TimerEvent: {}
+[48.378287] (-) TimerEvent: {}
+[48.478653] (-) TimerEvent: {}
+[48.579057] (-) TimerEvent: {}
+[48.679459] (-) TimerEvent: {}
+[48.779821] (-) TimerEvent: {}
+[48.880285] (-) TimerEvent: {}
+[48.980630] (-) TimerEvent: {}
+[49.080993] (-) TimerEvent: {}
+[49.181366] (-) TimerEvent: {}
+[49.281774] (-) TimerEvent: {}
+[49.382162] (-) TimerEvent: {}
+[49.482597] (-) TimerEvent: {}
+[49.583411] (-) TimerEvent: {}
+[49.684113] (-) TimerEvent: {}
+[49.719301] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `_Py_Dealloc'\n"}
+[49.722287] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyExc_RuntimeError'\n"}
+[49.730805] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyList_SetItem'\n"}
+[49.732352] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyBuffer_Release'\n"}
+[49.736061] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyFloat_FromDouble'\n"}
+[49.738967] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libstd_msgs__rosidl_generator_py.so: undefined reference to `PyLong_AsLongLong'\n"}
+[49.739406] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_Size'\n"}
+[49.745274] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyBuffer_ToContiguous'\n"}
+[49.745869] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_CallFunctionObjArgs'\n"}
+[49.749785] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyBytes_FromStringAndSize'\n"}
+[49.756189] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyErr_SetString'\n"}
+[49.760746] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libstd_msgs__rosidl_generator_py.so: undefined reference to `PyLong_FromUnsignedLongLong'\n"}
+[49.770860] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyBool_FromLong'\n"}
+[49.771364] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyLong_AsLong'\n"}
+[49.771670] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `_Py_TrueStruct'\n"}
+[49.772636] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libstd_msgs__rosidl_generator_py.so: undefined reference to `PyLong_FromLongLong'\n"}
+[49.780377] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_GetAttrString'\n"}
+[49.783294] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_CheckBuffer'\n"}
+[49.784316] (-) TimerEvent: {}
+[49.789387] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libsensor_msgs__rosidl_generator_py.so: undefined reference to `PyLong_FromLong'\n"}
+[49.792599] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_SetAttrString'\n"}
+[49.795486] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyUnicode_DecodeUTF8'\n"}
+[49.801057] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_GetBuffer'\n"}
+[49.806933] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libstd_msgs__rosidl_generator_py.so: undefined reference to `PyLong_AsUnsignedLongLong'\n"}
+[49.811323] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyLong_AsUnsignedLong'\n"}
+[49.812623] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PySequence_Size'\n"}
+[49.834413] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PySequence_Fast'\n"}
+[49.836522] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyUnicode_AsUTF8String'\n"}
+[49.838114] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyImport_ImportModule'\n"}
+[49.845816] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyObject_CallObject'\n"}
+[49.851212] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyLong_AsSize_t'\n"}
+[49.874387] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyList_New'\n"}
+[49.877397] (turtlebot3_icp_localization) StderrLine: {'line': b"/home/luqo/miniforge3/envs/ros_env/bin/../lib/gcc/x86_64-conda-linux-gnu/14.3.0/../../../../x86_64-conda-linux-gnu/bin/ld: /home/luqo/miniforge3/envs/ros_env/lib/libnav_msgs__rosidl_generator_py.so: undefined reference to `PyLong_FromUnsignedLong'\n"}
+[49.884504] (-) TimerEvent: {}
+[49.984890] (-) TimerEvent: {}
+[50.008523] (turtlebot3_icp_localization) StderrLine: {'line': b'collect2: error: ld returned 1 exit status\n'}
+[50.013535] (turtlebot3_icp_localization) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/icp_localizer.dir/build.make:325: icp_localizer] Error 1\n'}
+[50.014497] (turtlebot3_icp_localization) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/icp_localizer.dir/all] Error 2\n'}
+[50.015170] (turtlebot3_icp_localization) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[50.020713] (turtlebot3_icp_localization) JobEnded: {'identifier': 'turtlebot3_icp_localization', 'rc': 'SIGINT'}
+[50.033782] (-) EventReactorShutdown: {}

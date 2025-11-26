@@ -48,10 +48,6 @@ def get_edge_cost(parent, child, occ_map):
   else:
     # edge_cost = get_heuristic(parent, child)
     edge_cost = np.linalg.norm(np.array(parent) - np.array(child))
-    # if abs(y_parent - y_child) + abs(x_parent - x_child) == 2: # diagonal move
-    #   edge_cost = np.sqrt(2)
-    # else:
-    #   edge_cost = 1 # orthogonal move
 
   return edge_cost
 
@@ -65,14 +61,8 @@ def get_heuristic(cell, goal, h):
   Output:
   cost -- estimated cost
   '''
-
-  # heuristic = 0
-
   '''your code here'''
   '''***        ***'''
-
-
-  # return heuristic
   return np.linalg.norm(np.array(cell) - np.array(goal)) * h
 
 def plot_map(occ_map, start, goal):
@@ -182,6 +172,7 @@ def run_path_planning(occ_map, start, goal, h=1.0):
 
   #plot the costs
   plot_costs(costs)
+  plt.savefig(f"resultado_h_{h}.png", dpi=300, bbox_inches='tight')
   plt.waitforbuttonpress()
 
 def main():
@@ -195,7 +186,8 @@ def main():
   # start and goal position [x, y]
   start = np.array([22, 33])
   goal = np.array([40, 15])
-  for h in [1.0, 2.0, 5.0, 10.0]:
+  for h in [0.0, 1.0, 2.0, 5.0, 10.0]:
+    print(f"Running path planning with heuristic h={h}")
     run_path_planning(occ_map, start, goal, h)
 
 if __name__ == "__main__":

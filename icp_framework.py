@@ -8,8 +8,6 @@ import numpy as np
 import math
 import matplotlib.pyplot as plt
 import time
-# from sklearn.neighbors import NearestNeighbors
-
 
 def closest_point_matching(X, P):
   """Performs closest point matching of two point sets.
@@ -25,11 +23,6 @@ def closest_point_matching(X, P):
   P_matched = P
 
   #TODO: implement
-  # neighbors = NearestNeighbors(n_neighbors=1)
-  # neighbors.fit(P.T)
-  # distances, indices = neighbors.kneighbors(X.T)
-  # # print(indices)
-  # P_matched = P[:, indices.flatten()]
   n = X.shape[1]
   P_matched = np.zeros_like(P)
   used = np.zeros(P.shape[1], dtype=bool)

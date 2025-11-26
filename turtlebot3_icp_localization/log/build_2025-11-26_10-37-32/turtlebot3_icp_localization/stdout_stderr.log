@@ -1,0 +1,188 @@
+-- The C compiler identification is GNU 14.3.0
+-- The CXX compiler identification is GNU 14.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 1.3.7 (/home/luqo/miniforge3/envs/ros_env/share/ament_cmake/cmake)
+-- Found Python3: /home/luqo/miniforge3/envs/ros_env/bin/python3.11 (found version "3.11.8") found components: Interpreter 
+-- Found rclcpp: 16.0.8 (/home/luqo/miniforge3/envs/ros_env/share/rclcpp/cmake)
+-- Found rosidl_generator_c: 3.1.5 (/home/luqo/miniforge3/envs/ros_env/share/rosidl_generator_c/cmake)
+-- Found rosidl_adapter: 3.1.5 (/home/luqo/miniforge3/envs/ros_env/share/rosidl_adapter/cmake)
+-- Found rosidl_generator_cpp: 3.1.5 (/home/luqo/miniforge3/envs/ros_env/share/rosidl_generator_cpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Checking for module 'yaml-0.1'
+--   Found yaml-0.1, version 0.2.5
+-- Found rmw_implementation_cmake: 6.1.1 (/home/luqo/miniforge3/envs/ros_env/share/rmw_implementation_cmake/cmake)
+-- Found rmw_fastrtps_cpp: 6.2.6 (/home/luqo/miniforge3/envs/ros_env/share/rmw_fastrtps_cpp/cmake)
+-- Found OpenSSL: /home/luqo/miniforge3/envs/ros_env/lib/libcrypto.so (found version "3.6.0")  
+-- Found FastRTPS: /home/luqo/miniforge3/envs/ros_env/include  
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 4.2.3 (/home/luqo/miniforge3/envs/ros_env/share/sensor_msgs/cmake)
+-- Found nav_msgs: 4.2.3 (/home/luqo/miniforge3/envs/ros_env/share/nav_msgs/cmake)
+-- Found tf2_ros: 0.25.5 (/home/luqo/miniforge3/envs/ros_env/share/tf2_ros/cmake)
+-- Found pcl_conversions: 2.4.0 (/home/luqo/miniforge3/envs/ros_env/share/pcl_conversions/cmake)
+-- Found laser_geometry: 2.4.0 (/home/luqo/miniforge3/envs/ros_env/share/laser_geometry/cmake)
+-- Found tf2_geometry_msgs: 0.25.5 (/home/luqo/miniforge3/envs/ros_env/share/tf2_geometry_msgs/cmake)
+-- Found Eigen3: TRUE (found version "3.4.0") 
+-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[33mCMake Warning (dev) at /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:143 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable EIGEN_ROOT is set to:
+
+    /home/luqo/miniforge3/envs/ros_env/include/eigen3
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:296 (find_eigen)
+  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:549 (find_external_library)
+  CMakeLists.txt:22 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Checking for module 'eigen3'
+--   Found eigen3, version 3.4.0
+-- Found Eigen: /home/luqo/miniforge3/envs/ros_env/include/eigen3 (Required is at least version "3.3") 
+-- Eigen found (include: /home/luqo/miniforge3/envs/ros_env/include/eigen3, version: 3.4.0)
+-- Found Boost: /home/luqo/miniforge3/envs/ros_env/lib/cmake/Boost-1.82.0/BoostConfig.cmake (found suitable version "1.82.0", minimum required is "1.65.0") found components: system filesystem iostreams 
+[33mCMake Warning (dev) at /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/Modules/FindFLANN.cmake:45 (find_package):
+  Policy CMP0144 is not set: find_package uses upper-case <PACKAGENAME>_ROOT
+  variables.  Run "cmake --help-policy CMP0144" for policy details.  Use the
+  cmake_policy command to set the policy and suppress this warning.
+
+  CMake variable FLANN_ROOT is set to:
+
+    /home/luqo/miniforge3/envs/ros_env
+
+  For compatibility, find_package is ignoring the variable, but code in a
+  .cmake module might still use it.
+Call Stack (most recent call first):
+  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:253 (find_package)
+  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:298 (find_flann)
+  /home/luqo/miniforge3/envs/ros_env/share/pcl-1.13/PCLConfig.cmake:549 (find_external_library)
+  CMakeLists.txt:22 (find_package)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+[0m
+-- Found flann version 1.9.2
+-- Found GLEW: /home/luqo/miniforge3/envs/ros_env/lib/libGLEW.so  
+-- Found OpenGL: /home/luqo/miniforge3/envs/ros_env/lib/libOpenGL.so  found components: OpenGL GLX 
+-- Found utf8cpp: /home/luqo/miniforge3/envs/ros_env/include  
+-- Found ZLIB: /home/luqo/miniforge3/envs/ros_env/lib/libz.so (found version "1.2.13")  
+-- Found PNG: /home/luqo/miniforge3/envs/ros_env/lib/libpng.so (found version "1.6.43") 
+-- Found nlohmann_json: /home/luqo/miniforge3/envs/ros_env/share/cmake/nlohmann_json/nlohmann_jsonConfig.cmake (found version "3.12.0") 
+-- Found Eigen3: /home/luqo/miniforge3/envs/ros_env/include/eigen3 (found version "3.4.0") 
+-- Found X11: /home/luqo/miniforge3/envs/ros_env/include   
+-- Looking for XOpenDisplay in /home/luqo/miniforge3/envs/ros_env/lib/libX11.so;/home/luqo/miniforge3/envs/ros_env/lib/libXext.so
+-- Looking for XOpenDisplay in /home/luqo/miniforge3/envs/ros_env/lib/libX11.so;/home/luqo/miniforge3/envs/ros_env/lib/libXext.so - found
+-- Looking for gethostbyname
+-- Looking for gethostbyname - found
+-- Looking for connect
+-- Looking for connect - found
+-- Looking for remove
+-- Looking for remove - found
+-- Looking for shmat
+-- Looking for shmat - found
+-- Looking for IceConnectionNumber in ICE
+-- Looking for IceConnectionNumber in ICE - found
+-- Found EXPAT: /home/luqo/miniforge3/envs/ros_env/lib/libexpat.so (found version "2.5.0") 
+-- Found double-conversion: /home/luqo/miniforge3/envs/ros_env/lib/libdouble-conversion.so  
+-- Found LZ4: /home/luqo/miniforge3/envs/ros_env/lib/liblz4.so (found version "1.9.4") 
+-- Found LZMA: /home/luqo/miniforge3/envs/ros_env/lib/liblzma.so (found version "5.8.1") 
+-- Found JPEG: /home/luqo/miniforge3/envs/ros_env/lib/libjpeg.so (found version "80") 
+-- Found TIFF: /home/luqo/miniforge3/envs/ros_env/lib/libtiff.so (found version "4.6.0")  
+-- Found Freetype: /home/luqo/miniforge3/envs/ros_env/lib/libfreetype.so (found version "2.12.1") 
+-- Eigen found (include: /home/luqo/miniforge3/envs/ros_env/include/eigen3, version: 3.4.0)
+-- Found Qhull version 8.0.2
+-- looking for PCL_COMMON
+-- Found PCL_COMMON: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_common.so  
+-- looking for PCL_KDTREE
+-- Found PCL_KDTREE: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_kdtree.so  
+-- looking for PCL_OCTREE
+-- Found PCL_OCTREE: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_octree.so  
+-- looking for PCL_SEARCH
+-- Found PCL_SEARCH: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_search.so  
+-- looking for PCL_SAMPLE_CONSENSUS
+-- Found PCL_SAMPLE_CONSENSUS: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_sample_consensus.so  
+-- looking for PCL_FILTERS
+-- Found PCL_FILTERS: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_filters.so  
+-- looking for PCL_2D
+-- Found PCL_2D: /home/luqo/miniforge3/envs/ros_env/include/pcl-1.13  
+-- looking for PCL_GEOMETRY
+-- Found PCL_GEOMETRY: /home/luqo/miniforge3/envs/ros_env/include/pcl-1.13  
+-- looking for PCL_IO
+-- Found PCL_IO: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_io.so  
+-- looking for PCL_FEATURES
+-- Found PCL_FEATURES: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_features.so  
+-- looking for PCL_ML
+-- Found PCL_ML: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_ml.so  
+-- looking for PCL_SEGMENTATION
+-- Found PCL_SEGMENTATION: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_segmentation.so  
+-- looking for PCL_VISUALIZATION
+-- Found PCL_VISUALIZATION: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_visualization.so  
+-- looking for PCL_SURFACE
+-- Found PCL_SURFACE: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_surface.so  
+-- looking for PCL_REGISTRATION
+-- Found PCL_REGISTRATION: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_registration.so  
+-- looking for PCL_KEYPOINTS
+-- Found PCL_KEYPOINTS: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_keypoints.so  
+-- looking for PCL_TRACKING
+-- Found PCL_TRACKING: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_tracking.so  
+-- looking for PCL_RECOGNITION
+-- Found PCL_RECOGNITION: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_recognition.so  
+-- looking for PCL_STEREO
+-- Found PCL_STEREO: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_stereo.so  
+-- looking for PCL_OUTOFCORE
+-- Found PCL_OUTOFCORE: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_outofcore.so  
+-- looking for PCL_PEOPLE
+-- Found PCL_PEOPLE: /home/luqo/miniforge3/envs/ros_env/lib/libpcl_people.so  
+-- Found PCL: pcl_common;pcl_kdtree;pcl_octree;pcl_search;pcl_sample_consensus;pcl_filters;pcl_io;pcl_features;pcl_ml;pcl_segmentation;pcl_visualization;pcl_surface;pcl_registration;pcl_keypoints;pcl_tracking;pcl_recognition;pcl_stereo;pcl_outofcore;pcl_people;Boost::system;Boost::filesystem;Boost::iostreams;VTK::ChartsCore;VTK::CommonColor;VTK::CommonComputationalGeometry;VTK::CommonCore;VTK::CommonDataModel;VTK::CommonExecutionModel;VTK::CommonMath;VTK::CommonMisc;VTK::CommonTransforms;VTK::FiltersCore;VTK::FiltersExtraction;VTK::FiltersGeneral;VTK::FiltersGeometry;VTK::FiltersModeling;VTK::FiltersSources;VTK::ImagingCore;VTK::ImagingSources;VTK::InteractionImage;VTK::InteractionStyle;VTK::InteractionWidgets;VTK::IOCore;VTK::IOGeometry;VTK::IOImage;VTK::IOLegacy;VTK::IOPLY;VTK::RenderingAnnotation;VTK::RenderingCore;VTK::RenderingContext2D;VTK::RenderingLOD;VTK::RenderingFreeType;VTK::ViewsCore;VTK::ViewsContext2D;VTK::RenderingOpenGL2;VTK::RenderingContextOpenGL2;VTK::GUISupportQt;FLANN::FLANN;QHULL::QHULL  
+-- Found ament_lint_auto: 0.12.10 (/home/luqo/miniforge3/envs/ros_env/share/ament_lint_auto/cmake)
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/include>
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done (16.0s)
+-- Generating done (0.2s)
+-- Build files have been written to: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization
+[ 50%] [32mBuilding CXX object CMakeFiles/icp_localizer.dir/src/icp_localizer.cpp.o[0m
+[100%] [32m[1mLinking CXX executable icp_localizer[0m
+[100%] Built target icp_localizer
+-- Install configuration: ""
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/lib/turtlebot3_icp_localization/icp_localizer
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/launch
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/launch/icp_localization.launch.py
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/rviz
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/rviz/icp.rviz
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/ament_index/resource_index/package_run_dependencies/turtlebot3_icp_localization
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/ament_index/resource_index/parent_prefix_path/turtlebot3_icp_localization
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/ament_prefix_path.sh
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/ament_prefix_path.dsv
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/path.sh
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/path.dsv
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.bash
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.sh
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.zsh
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.dsv
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/package.dsv
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/ament_index/resource_index/packages/turtlebot3_icp_localization
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/cmake/turtlebot3_icp_localizationConfig.cmake
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/cmake/turtlebot3_icp_localizationConfig-version.cmake
+-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/package.xml

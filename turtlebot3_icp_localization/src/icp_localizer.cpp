@@ -97,8 +97,123 @@ private:
             }
         }
 
+
+        Eigen::Matrix4f icp_transform;
+        bool converged = icp(current_filtered, stable_filtered, icp_transform);
+        if (converged) {
+            update_pose(icp_transform);
+            publish_transform();
+            stable_cloud_ = current_cloud;
+        }
+
+         // Con la convergencia aprobada, actualizar la nube estable.
+    }
+
+private:
+    bool icp(pcl::PointCloud<pcl::PointXYZ>::Ptr source,
+                    pcl::PointCloud<pcl::PointXYZ>::Ptr target,
+                    Eigen::Matrix4f &final_transform) {
+        final_transform = Eigen::Matrix4f::Identity();
+        const int MAX_ITERS = 15;
+        const float ROT_THRESHOLD = 0.01; // rad ≈ 0.5°
+        float angle;
+
+        pcl::PointCloud<pcl::PointXYZ>::Ptr src(new pcl::PointCloud<pcl::PointXYZ>(*source));
+
+        for(int iter = 0; iter < MAX_ITERS; iter++) {
+            std::vector<Eigen::Vector2f> src_pts, tgt_pts;
+            closest_point_matching(src, target, src_pts, tgt_pts);
+            
+
+            //centroides
+            Eigen::Vector2f centroid_src = Eigen::Vector2f::Zero();
+            Eigen::Vector2f centroid_tgt = Eigen::Vector2f::Zero();
+            
+            for(size_t i=0;i<src_pts.size();i++) {
+                centroid_src += src_pts[i];
+                centroid_tgt += tgt_pts[i];
+            }
+            centroid_src /= src_pts.size();
+            centroid_tgt /= tgt_pts.size();
+            
+            Eigen::Matrix2f H = Eigen::Matrix2f::Zero();
+            for(size_t i=0;i<src_pts.size();i++) {
+                H += (src_pts[i] - centroid_src) * (tgt_pts[i] - centroid_tgt).transpose();
+            }
+            
+            //SVD
+            Eigen::JacobiSVD<Eigen::Matrix2f> svd(H, Eigen::ComputeFullU | Eigen::ComputeFullV);
+            Eigen::Matrix2f R = svd.matrixV() * svd.matrixU().transpose();
+
+            if(R.determinant() < 0) {
+                Eigen::Matrix2f V = svd.matrixV();
+                V.col(1) *= -1;
+                R = V * svd.matrixU().transpose();
+            }
+
+            Eigen::Vector2f t = centroid_tgt - R * centroid_src;
+
+            //T
+            Eigen::Matrix4f T = Eigen::Matrix4f::Identity();
+            T(0,0)=R(0,0);
+            T(0,1)=R(0,1);
+            T(1,0)=R(1,0);
+            T(1,1)=R(1,1);
+            T(0,3)=t(0);
+            T(1,3)=t(1);
+
+            final_transform = T * final_transform;
+
+            for(auto &p: src->points) {
+                Eigen::Vector4f pt(p.x,p.y,0,1);
+                pt = T * pt;
+                p.x = pt(0);
+                p.y = pt(1);
+            }
+            
+            //convergencia
+            angle = std::atan2(R(1,0), R(0,0));
+            if(std::abs(angle) < ROT_THRESHOLD)
+                return true;
+        }
+        return false;
+    }
+
+
+private:
+    void closest_point_matching( pcl::PointCloud<pcl::PointXYZ>::Ptr src,
+                                 pcl::PointCloud<pcl::PointXYZ>::Ptr target,
+                                 std::vector<Eigen::Vector2f> &src_pts,
+                                 std::vector<Eigen::Vector2f> &tgt_pts) {
+        float min_dist;
+        int min_idx;
+        float d;
         
-        stable_cloud_ = current_cloud; // Con la convergencia aprobada, actualizar la nube estable.
+        std::vector<bool> used(target->size(), false);
+        for(const auto &p : src->points) {
+            min_dist = std::numeric_limits<float>::max();
+            min_idx = -1;
+
+            for(size_t j = 0; j < target->points.size(); j++) {
+                if(used[j]) continue;
+
+                const auto &q = target->points[j];
+                d = std::hypot(p.x - q.x, p.y - q.y);
+
+                if(d < min_dist) {
+                    min_dist = d;
+                    min_idx = j;
+                }
+            }
+
+            if(min_idx != -1) {
+                used[min_idx] = true;
+                const auto &q = target->points[min_idx];
+
+                src_pts.push_back(Eigen::Vector2f(p.x,p.y));
+                tgt_pts.push_back(Eigen::Vector2f(q.x,q.y));
+            }
+        }
     }
 
 
@@ -130,7 +245,7 @@ private:
 
         t.header.stamp = this->get_clock()->now();
         t.header.frame_id = "odom";
-        t.child_frame_id = "base_link";
+        t.child_frame_id = "pra_123";
 
         t.transform.translation.x = current_pose_.pose.pose.position.x;
         t.transform.translation.y = current_pose_.pose.pose.position.y;

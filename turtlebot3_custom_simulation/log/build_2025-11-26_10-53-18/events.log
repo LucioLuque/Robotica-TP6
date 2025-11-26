@@ -1,0 +1,434 @@
+[0.000000] (-) TimerEvent: {}
+[0.001040] (turtlebot3_custom_simulation) JobQueued: {'identifier': 'turtlebot3_custom_simulation', 'dependencies': OrderedDict()}
+[0.001267] (turtlebot3_custom_simulation) JobStarted: {'identifier': 'turtlebot3_custom_simulation'}
+[0.018967] (turtlebot3_custom_simulation) JobProgress: {'identifier': 'turtlebot3_custom_simulation', 'progress': 'cmake'}
+[0.019535] (turtlebot3_custom_simulation) Command: {'cmd': ['/home/luqo/miniforge3/envs/ros_env/bin/cmake', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation', '-DCMAKE_INSTALL_PREFIX=/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation'], 'cwd': '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/build/turtlebot3_custom_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(ros_env)'), ('USER', 'luqo'), ('LC_TIME', 'es_AR.UTF-8'), ('CXXFLAGS', '-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('GCC_RANLIB', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ranlib'), ('XDG_SESSION_TYPE', 'wayland'), ('OBJCOPY', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-objcopy'), ('DEBUG_CXXFLAGS', '-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('ROS_ETC_DIR', '/home/luqo/miniforge3/envs/ros_env/etc/ros'), ('SIZE', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-size'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/gazebo-11/plugins:/home/luqo/miniforge3/envs/ros_env/opt/rviz_ogre_vendor/lib:/home/luqo/miniforge3/envs/ros_env/lib/gazebo-11/plugins:'), ('HOME', '/home/luqo'), ('CC_FOR_BUILD', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-cc'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6'), ('DESKTOP_SESSION', 'ubuntu'), ('CONDA_TOOLCHAIN_BUILD', 'x86_64-conda-linux-gnu'), ('F90', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LDFLAGS', '-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/luqo/miniforge3/envs/ros_env/lib -Wl,-rpath-link,/home/luqo/miniforge3/envs/ros_env/lib -L/home/luqo/miniforge3/envs/ros_env/lib'), ('CONDA_BACKUP_CMAKE_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization:/home/luqo/Documents/Robotica/turtlebot3_ws/install/turtlebot3_custom_simulation'), ('FC', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('STRINGS', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-strings'), ('LC_MONETARY', 'es_AR.UTF-8'), ('CPL_ZIP_ENCODING', 'UTF-8'), ('SYSTEMD_EXEC_PID', '6209'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CPP', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-cpp'), ('_CONDA_ROOT', '/home/luqo/miniforge3'), ('F77', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('F95', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-f95'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ELFEDIT', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-elfedit'), ('COLCON_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install:/home/luqo/Documents/Robotica/turtlebot3_ws/install'), ('STRIP', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-strip'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luqo'), ('GCC', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc'), ('_', '/home/luqo/miniforge3/envs/ros_env/bin/colcon'), ('ROS_VERSION', '2'), ('READELF', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-readelf'), ('XDG_SESSION_CLASS', 'user'), ('AR', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ar'), ('USERNAME', 'luqo'), ('GXX', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-g++'), ('FC_FOR_BUILD', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('TERM', 'xterm-256color'), ('AS', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-as'), ('GAZEBO_MODEL_PATH', '/home/luqo/miniforge3/envs/ros_env/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('CXXFILT', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-c++filt'), ('ROS_OS_OVERRIDE', 'conda:linux'), ('BUILD', 'x86_64-conda-linux-gnu'), ('OGRE_RESOURCE_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/OGRE'), ('PATH', '/home/luqo/miniforge3/envs/ros_env/share/rubygems/bin:/home/luqo/miniforge3/envs/ros_env/bin:/home/luqo/miniforge3/condabin:/home/luqo/miniforge3/envs/ros_env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/MACHINE:@/tmp/.ICE-unix/1608,unix/MACHINE:/tmp/.ICE-unix/1608'), ('PROJ_NETWORK', 'ON'), ('XDG_MENU_PREFIX', 'gnome-'), ('build_alias', 'x86_64-conda-linux-gnu'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/91bb3c59_16aa_4c1a_9e6b_ce0c3b6d3ed0'), ('GNOME_SETUP_DISPLAY', ':1'), ('PROJ_DATA', '/home/luqo/miniforge3/envs/ros_env/share/proj'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('MAMBA_ROOT_PREFIX', '/home/luqo/.local/share/mamba'), ('GCC_AR', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ar'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('DEBUG_CFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('CONDA_PREFIX_1', '/home/luqo/miniforge3'), ('_CONDA_PYTHON_SYSCONFIGDATA_NAME', '_sysconfigdata_x86_64_conda_linux_gnu'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.01IQG3'), ('MESON_ARGS', '-Dbuildtype=release'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.148'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XML_CATALOG_FILES', 'file:///home/luqo/miniforge3/envs/ros_env/etc/xml/catalog file:///etc/xml/catalog'), ('GSETTINGS_SCHEMA_DIR', '/home/luqo/miniforge3/envs/ros_env/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/luqo/miniforge3/envs/ros_env'), ('CPPFLAGS', '-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('CONDA_PYTHON_EXE', '/home/luqo/miniforge3/bin/python'), ('SHELL', '/bin/bash'), ('DEBUG_FFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include -I/home/luqo/miniforge3/envs/ros_env/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fimplicit-none -fvar-tracking-assignments -ffunction-sections -pipe'), ('CMAKE_ARGS', '-DCMAKE_AR=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'), ('LC_NAME', 'es_AR.UTF-8'), ('HOST', 'x86_64-conda-linux-gnu'), ('GDAL_DRIVER_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/gdalplugins'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-c++'), ('DEBUG_CPPFLAGS', '-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/luqo/miniforge3/envs/ros_env/share/rubygems/'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('DEBUG_FORTRANFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include -I/home/luqo/miniforge3/envs/ros_env/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fimplicit-none -fvar-tracking-assignments -ffunction-sections -pipe'), ('CONDA_DEFAULT_ENV', 'ros_env'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/luqo/miniforge3/envs/ros_env/share/gazebo-11:'), ('_CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('ADDR2LINE', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-addr2line'), ('MAMBA_EXE', '/home/luqo/miniforge3/bin/mamba'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('GCC_NM', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-nm'), ('GFORTRAN', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('CONDA_BUILD_SYSROOT', '/home/luqo/miniforge3/envs/ros_env/x86_64-conda-linux-gnu/sysroot'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/build/turtlebot3_custom_simulation'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('FFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include -I/home/luqo/miniforge3/envs/ros_env/include'), ('GAZEBO_PLUGIN_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/gazebo-11/plugins:'), ('LD', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ld'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/luqo/miniforge3/envs/ros_env/lib/python311/site-packages:/home/luqo/miniforge3/envs/ros_env/lib/python3.11/site-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('GPROF', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gprof'), ('CONDA_PREFIX', '/home/luqo/miniforge3/envs/ros_env'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('CONDA_TOOLCHAIN_HOST', 'x86_64-conda-linux-gnu'), ('LC_PAPER', 'es_AR.UTF-8'), ('host_alias', 'x86_64-conda-linux-gnu'), ('FORTRANFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include -I/home/luqo/miniforge3/envs/ros_env/include'), ('CC', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-cc'), ('RANLIB', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ranlib'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CXX_FOR_BUILD', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-c++'), ('CMAKE_PREFIX_PATH', '/home/luqo/miniforge3/envs/ros_env:/home/luqo/miniforge3/envs/ros_env/x86_64-conda-linux-gnu/sysroot/usr'), ('NM', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-nm'), ('GDAL_DATA', '/home/luqo/miniforge3/envs/ros_env/share/gdal'), ('OBJDUMP', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-objdump')]), 'shell': False}
+[0.099618] (-) TimerEvent: {}
+[0.163866] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- The C compiler identification is GNU 14.3.0\n'}
+[0.199965] (-) TimerEvent: {}
+[0.300682] (-) TimerEvent: {}
+[0.401042] (-) TimerEvent: {}
+[0.484441] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 14.3.0\n'}
+[0.501226] (-) TimerEvent: {}
+[0.536031] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.601408] (-) TimerEvent: {}
+[0.701779] (-) TimerEvent: {}
+[0.736729] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.781671] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Check for working C compiler: /home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-cc - skipped\n'}
+[0.782108] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.782908] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.801936] (-) TimerEvent: {}
+[0.806447] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.902107] (-) TimerEvent: {}
+[1.002482] (-) TimerEvent: {}
+[1.052160] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[1.089145] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Check for working CXX compiler: /home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-c++ - skipped\n'}
+[1.089955] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[1.091545] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[1.102683] (-) TimerEvent: {}
+[1.106944] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.7 (/home/luqo/miniforge3/envs/ros_env/share/ament_cmake/cmake)\n'}
+[1.202896] (-) TimerEvent: {}
+[1.303198] (-) TimerEvent: {}
+[1.403519] (-) TimerEvent: {}
+[1.503862] (-) TimerEvent: {}
+[1.604213] (-) TimerEvent: {}
+[1.704492] (-) TimerEvent: {}
+[1.804805] (-) TimerEvent: {}
+[1.905134] (-) TimerEvent: {}
+[2.005496] (-) TimerEvent: {}
+[2.105839] (-) TimerEvent: {}
+[2.206144] (-) TimerEvent: {}
+[2.263601] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found Python3: /home/luqo/miniforge3/envs/ros_env/bin/python3.11 (found version "3.11.8") found components: Interpreter \n'}
+[2.306337] (-) TimerEvent: {}
+[2.406754] (-) TimerEvent: {}
+[2.507094] (-) TimerEvent: {}
+[2.571574] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/home/luqo/miniforge3/envs/ros_env/share/geometry_msgs/cmake)\n'}
+[2.607548] (-) TimerEvent: {}
+[2.707905] (-) TimerEvent: {}
+[2.719498] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/home/luqo/miniforge3/envs/ros_env/share/rosidl_generator_c/cmake)\n'}
+[2.744221] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/home/luqo/miniforge3/envs/ros_env/share/rosidl_adapter/cmake)\n'}
+[2.778831] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/home/luqo/miniforge3/envs/ros_env/share/rosidl_generator_cpp/cmake)\n'}
+[2.808161] (-) TimerEvent: {}
+[2.828075] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.901464] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.908323] (-) TimerEvent: {}
+[3.008694] (-) TimerEvent: {}
+[3.109061] (-) TimerEvent: {}
+[3.209450] (-) TimerEvent: {}
+[3.224796] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.3 (/home/luqo/miniforge3/envs/ros_env/share/nav_msgs/cmake)\n'}
+[3.309615] (-) TimerEvent: {}
+[3.409962] (-) TimerEvent: {}
+[3.429757] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found rclcpp: 16.0.8 (/home/luqo/miniforge3/envs/ros_env/share/rclcpp/cmake)\n'}
+[3.510491] (-) TimerEvent: {}
+[3.610880] (-) TimerEvent: {}
+[3.684568] (turtlebot3_custom_simulation) StdoutLine: {'line': b"-- Checking for module 'yaml-0.1'\n"}
+[3.711063] (-) TimerEvent: {}
+[3.811436] (-) TimerEvent: {}
+[3.911764] (-) TimerEvent: {}
+[3.951698] (turtlebot3_custom_simulation) StdoutLine: {'line': b'--   Found yaml-0.1, version 0.2.5\n'}
+[4.011936] (-) TimerEvent: {}
+[4.112254] (-) TimerEvent: {}
+[4.212598] (-) TimerEvent: {}
+[4.312919] (-) TimerEvent: {}
+[4.413203] (-) TimerEvent: {}
+[4.513545] (-) TimerEvent: {}
+[4.613849] (-) TimerEvent: {}
+[4.714169] (-) TimerEvent: {}
+[4.720101] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/home/luqo/miniforge3/envs/ros_env/share/rmw_implementation_cmake/cmake)\n'}
+[4.736791] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/home/luqo/miniforge3/envs/ros_env/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.814397] (-) TimerEvent: {}
+[4.914709] (-) TimerEvent: {}
+[5.014993] (-) TimerEvent: {}
+[5.115310] (-) TimerEvent: {}
+[5.215667] (-) TimerEvent: {}
+[5.315979] (-) TimerEvent: {}
+[5.416288] (-) TimerEvent: {}
+[5.516632] (-) TimerEvent: {}
+[5.616952] (-) TimerEvent: {}
+[5.717313] (-) TimerEvent: {}
+[5.817683] (-) TimerEvent: {}
+[5.885129] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found OpenSSL: /home/luqo/miniforge3/envs/ros_env/lib/libcrypto.so (found version "3.6.0")  \n'}
+[5.917865] (-) TimerEvent: {}
+[5.987434] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found FastRTPS: /home/luqo/miniforge3/envs/ros_env/include  \n'}
+[6.018015] (-) TimerEvent: {}
+[6.118404] (-) TimerEvent: {}
+[6.157960] (turtlebot3_custom_simulation) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[6.200050] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[6.218569] (-) TimerEvent: {}
+[6.318910] (-) TimerEvent: {}
+[6.400821] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[6.404681] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[6.419076] (-) TimerEvent: {}
+[6.519468] (-) TimerEvent: {}
+[6.619842] (-) TimerEvent: {}
+[6.720226] (-) TimerEvent: {}
+[6.732420] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.3 (/home/luqo/miniforge3/envs/ros_env/share/sensor_msgs/cmake)\n'}
+[6.820451] (-) TimerEvent: {}
+[6.920783] (-) TimerEvent: {}
+[6.945329] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found tf2: 0.25.5 (/home/luqo/miniforge3/envs/ros_env/share/tf2/cmake)\n'}
+[6.982433] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found tf2_msgs: 0.25.5 (/home/luqo/miniforge3/envs/ros_env/share/tf2_msgs/cmake)\n'}
+[7.020986] (-) TimerEvent: {}
+[7.121350] (-) TimerEvent: {}
+[7.221724] (-) TimerEvent: {}
+[7.322103] (-) TimerEvent: {}
+[7.357335] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Found turtlebot3_msgs: 2.2.3 (/home/luqo/miniforge3/envs/ros_env/share/turtlebot3_msgs/cmake)\n'}
+[7.422299] (-) TimerEvent: {}
+[7.522689] (-) TimerEvent: {}
+[7.623030] (-) TimerEvent: {}
+[7.712616] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Configuring done (7.7s)\n'}
+[7.723235] (-) TimerEvent: {}
+[7.743149] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Generating done (0.0s)\n'}
+[7.747588] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Build files have been written to: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/build/turtlebot3_custom_simulation\n'}
+[7.768468] (turtlebot3_custom_simulation) CommandEnded: {'returncode': 0}
+[7.771688] (turtlebot3_custom_simulation) JobProgress: {'identifier': 'turtlebot3_custom_simulation', 'progress': 'build'}
+[7.771768] (turtlebot3_custom_simulation) Command: {'cmd': ['/home/luqo/miniforge3/envs/ros_env/bin/cmake', '--build', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/build/turtlebot3_custom_simulation', '--', '-j8', '-l8'], 'cwd': '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/build/turtlebot3_custom_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(ros_env)'), ('USER', 'luqo'), ('LC_TIME', 'es_AR.UTF-8'), ('CXXFLAGS', '-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('GCC_RANLIB', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ranlib'), ('XDG_SESSION_TYPE', 'wayland'), ('OBJCOPY', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-objcopy'), ('DEBUG_CXXFLAGS', '-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('ROS_ETC_DIR', '/home/luqo/miniforge3/envs/ros_env/etc/ros'), ('SIZE', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-size'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/gazebo-11/plugins:/home/luqo/miniforge3/envs/ros_env/opt/rviz_ogre_vendor/lib:/home/luqo/miniforge3/envs/ros_env/lib/gazebo-11/plugins:'), ('HOME', '/home/luqo'), ('CC_FOR_BUILD', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-cc'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6'), ('DESKTOP_SESSION', 'ubuntu'), ('CONDA_TOOLCHAIN_BUILD', 'x86_64-conda-linux-gnu'), ('F90', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LDFLAGS', '-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/luqo/miniforge3/envs/ros_env/lib -Wl,-rpath-link,/home/luqo/miniforge3/envs/ros_env/lib -L/home/luqo/miniforge3/envs/ros_env/lib'), ('CONDA_BACKUP_CMAKE_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization:/home/luqo/Documents/Robotica/turtlebot3_ws/install/turtlebot3_custom_simulation'), ('FC', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('STRINGS', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-strings'), ('LC_MONETARY', 'es_AR.UTF-8'), ('CPL_ZIP_ENCODING', 'UTF-8'), ('SYSTEMD_EXEC_PID', '6209'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CPP', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-cpp'), ('_CONDA_ROOT', '/home/luqo/miniforge3'), ('F77', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('F95', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-f95'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ELFEDIT', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-elfedit'), ('COLCON_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install:/home/luqo/Documents/Robotica/turtlebot3_ws/install'), ('STRIP', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-strip'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luqo'), ('GCC', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc'), ('_', '/home/luqo/miniforge3/envs/ros_env/bin/colcon'), ('ROS_VERSION', '2'), ('READELF', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-readelf'), ('XDG_SESSION_CLASS', 'user'), ('AR', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ar'), ('USERNAME', 'luqo'), ('GXX', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-g++'), ('FC_FOR_BUILD', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('TERM', 'xterm-256color'), ('AS', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-as'), ('GAZEBO_MODEL_PATH', '/home/luqo/miniforge3/envs/ros_env/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('CXXFILT', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-c++filt'), ('ROS_OS_OVERRIDE', 'conda:linux'), ('BUILD', 'x86_64-conda-linux-gnu'), ('OGRE_RESOURCE_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/OGRE'), ('PATH', '/home/luqo/miniforge3/envs/ros_env/share/rubygems/bin:/home/luqo/miniforge3/envs/ros_env/bin:/home/luqo/miniforge3/condabin:/home/luqo/miniforge3/envs/ros_env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/MACHINE:@/tmp/.ICE-unix/1608,unix/MACHINE:/tmp/.ICE-unix/1608'), ('PROJ_NETWORK', 'ON'), ('XDG_MENU_PREFIX', 'gnome-'), ('build_alias', 'x86_64-conda-linux-gnu'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/91bb3c59_16aa_4c1a_9e6b_ce0c3b6d3ed0'), ('GNOME_SETUP_DISPLAY', ':1'), ('PROJ_DATA', '/home/luqo/miniforge3/envs/ros_env/share/proj'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('MAMBA_ROOT_PREFIX', '/home/luqo/.local/share/mamba'), ('GCC_AR', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ar'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('DEBUG_CFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('CONDA_PREFIX_1', '/home/luqo/miniforge3'), ('_CONDA_PYTHON_SYSCONFIGDATA_NAME', '_sysconfigdata_x86_64_conda_linux_gnu'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.01IQG3'), ('MESON_ARGS', '-Dbuildtype=release'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.148'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XML_CATALOG_FILES', 'file:///home/luqo/miniforge3/envs/ros_env/etc/xml/catalog file:///etc/xml/catalog'), ('GSETTINGS_SCHEMA_DIR', '/home/luqo/miniforge3/envs/ros_env/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/luqo/miniforge3/envs/ros_env'), ('CPPFLAGS', '-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('CONDA_PYTHON_EXE', '/home/luqo/miniforge3/bin/python'), ('SHELL', '/bin/bash'), ('DEBUG_FFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include -I/home/luqo/miniforge3/envs/ros_env/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fimplicit-none -fvar-tracking-assignments -ffunction-sections -pipe'), ('CMAKE_ARGS', '-DCMAKE_AR=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'), ('LC_NAME', 'es_AR.UTF-8'), ('HOST', 'x86_64-conda-linux-gnu'), ('GDAL_DRIVER_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/gdalplugins'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-c++'), ('DEBUG_CPPFLAGS', '-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/luqo/miniforge3/envs/ros_env/share/rubygems/'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('DEBUG_FORTRANFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include -I/home/luqo/miniforge3/envs/ros_env/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fimplicit-none -fvar-tracking-assignments -ffunction-sections -pipe'), ('CONDA_DEFAULT_ENV', 'ros_env'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/luqo/miniforge3/envs/ros_env/share/gazebo-11:'), ('_CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('ADDR2LINE', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-addr2line'), ('MAMBA_EXE', '/home/luqo/miniforge3/bin/mamba'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('GCC_NM', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-nm'), ('GFORTRAN', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('CONDA_BUILD_SYSROOT', '/home/luqo/miniforge3/envs/ros_env/x86_64-conda-linux-gnu/sysroot'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/build/turtlebot3_custom_simulation'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('FFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include -I/home/luqo/miniforge3/envs/ros_env/include'), ('GAZEBO_PLUGIN_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/gazebo-11/plugins:'), ('LD', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ld'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/luqo/miniforge3/envs/ros_env/lib/python311/site-packages:/home/luqo/miniforge3/envs/ros_env/lib/python3.11/site-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('GPROF', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gprof'), ('CONDA_PREFIX', '/home/luqo/miniforge3/envs/ros_env'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('CONDA_TOOLCHAIN_HOST', 'x86_64-conda-linux-gnu'), ('LC_PAPER', 'es_AR.UTF-8'), ('host_alias', 'x86_64-conda-linux-gnu'), ('FORTRANFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include -I/home/luqo/miniforge3/envs/ros_env/include'), ('CC', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-cc'), ('RANLIB', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ranlib'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CXX_FOR_BUILD', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-c++'), ('CMAKE_PREFIX_PATH', '/home/luqo/miniforge3/envs/ros_env:/home/luqo/miniforge3/envs/ros_env/x86_64-conda-linux-gnu/sysroot/usr'), ('NM', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-nm'), ('GDAL_DATA', '/home/luqo/miniforge3/envs/ros_env/share/gdal'), ('OBJDUMP', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-objdump')]), 'shell': False}
+[7.823440] (-) TimerEvent: {}
+[7.877704] (turtlebot3_custom_simulation) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/turtlebot3_custom_simulation.dir/src/turtlebot3_custom_simulation.cpp.o\x1b[0m\n'}
+[7.923855] (-) TimerEvent: {}
+[8.024220] (-) TimerEvent: {}
+[8.124611] (-) TimerEvent: {}
+[8.224971] (-) TimerEvent: {}
+[8.325332] (-) TimerEvent: {}
+[8.425691] (-) TimerEvent: {}
+[8.526023] (-) TimerEvent: {}
+[8.626417] (-) TimerEvent: {}
+[8.726797] (-) TimerEvent: {}
+[8.827135] (-) TimerEvent: {}
+[8.927517] (-) TimerEvent: {}
+[9.027918] (-) TimerEvent: {}
+[9.128283] (-) TimerEvent: {}
+[9.228703] (-) TimerEvent: {}
+[9.329346] (-) TimerEvent: {}
+[9.429724] (-) TimerEvent: {}
+[9.530112] (-) TimerEvent: {}
+[9.630507] (-) TimerEvent: {}
+[9.730904] (-) TimerEvent: {}
+[9.831252] (-) TimerEvent: {}
+[9.931647] (-) TimerEvent: {}
+[10.032025] (-) TimerEvent: {}
+[10.132446] (-) TimerEvent: {}
+[10.232792] (-) TimerEvent: {}
+[10.333157] (-) TimerEvent: {}
+[10.433534] (-) TimerEvent: {}
+[10.534329] (-) TimerEvent: {}
+[10.634747] (-) TimerEvent: {}
+[10.735122] (-) TimerEvent: {}
+[10.835521] (-) TimerEvent: {}
+[10.935873] (-) TimerEvent: {}
+[11.036245] (-) TimerEvent: {}
+[11.136674] (-) TimerEvent: {}
+[11.237329] (-) TimerEvent: {}
+[11.337708] (-) TimerEvent: {}
+[11.438057] (-) TimerEvent: {}
+[11.538464] (-) TimerEvent: {}
+[11.638855] (-) TimerEvent: {}
+[11.739291] (-) TimerEvent: {}
+[11.839719] (-) TimerEvent: {}
+[11.940123] (-) TimerEvent: {}
+[12.040503] (-) TimerEvent: {}
+[12.140855] (-) TimerEvent: {}
+[12.241217] (-) TimerEvent: {}
+[12.341609] (-) TimerEvent: {}
+[12.441998] (-) TimerEvent: {}
+[12.542493] (-) TimerEvent: {}
+[12.642903] (-) TimerEvent: {}
+[12.743305] (-) TimerEvent: {}
+[12.843737] (-) TimerEvent: {}
+[12.944094] (-) TimerEvent: {}
+[13.044526] (-) TimerEvent: {}
+[13.144871] (-) TimerEvent: {}
+[13.245260] (-) TimerEvent: {}
+[13.345672] (-) TimerEvent: {}
+[13.446053] (-) TimerEvent: {}
+[13.546467] (-) TimerEvent: {}
+[13.646828] (-) TimerEvent: {}
+[13.747222] (-) TimerEvent: {}
+[13.847667] (-) TimerEvent: {}
+[13.948040] (-) TimerEvent: {}
+[14.048483] (-) TimerEvent: {}
+[14.148867] (-) TimerEvent: {}
+[14.249223] (-) TimerEvent: {}
+[14.349606] (-) TimerEvent: {}
+[14.449966] (-) TimerEvent: {}
+[14.550307] (-) TimerEvent: {}
+[14.650717] (-) TimerEvent: {}
+[14.751107] (-) TimerEvent: {}
+[14.851531] (-) TimerEvent: {}
+[14.951922] (-) TimerEvent: {}
+[15.052259] (-) TimerEvent: {}
+[15.152626] (-) TimerEvent: {}
+[15.252980] (-) TimerEvent: {}
+[15.353402] (-) TimerEvent: {}
+[15.453904] (-) TimerEvent: {}
+[15.554588] (-) TimerEvent: {}
+[15.655025] (-) TimerEvent: {}
+[15.757252] (-) TimerEvent: {}
+[15.857705] (-) TimerEvent: {}
+[15.958116] (-) TimerEvent: {}
+[16.058502] (-) TimerEvent: {}
+[16.158869] (-) TimerEvent: {}
+[16.259271] (-) TimerEvent: {}
+[16.359694] (-) TimerEvent: {}
+[16.460070] (-) TimerEvent: {}
+[16.560511] (-) TimerEvent: {}
+[16.660938] (-) TimerEvent: {}
+[16.761302] (-) TimerEvent: {}
+[16.861692] (-) TimerEvent: {}
+[16.962061] (-) TimerEvent: {}
+[17.062437] (-) TimerEvent: {}
+[17.162782] (-) TimerEvent: {}
+[17.263119] (-) TimerEvent: {}
+[17.363487] (-) TimerEvent: {}
+[17.463898] (-) TimerEvent: {}
+[17.564252] (-) TimerEvent: {}
+[17.664682] (-) TimerEvent: {}
+[17.765044] (-) TimerEvent: {}
+[17.865422] (-) TimerEvent: {}
+[17.966250] (-) TimerEvent: {}
+[18.066702] (-) TimerEvent: {}
+[18.167092] (-) TimerEvent: {}
+[18.267528] (-) TimerEvent: {}
+[18.367928] (-) TimerEvent: {}
+[18.468280] (-) TimerEvent: {}
+[18.568665] (-) TimerEvent: {}
+[18.669006] (-) TimerEvent: {}
+[18.769416] (-) TimerEvent: {}
+[18.869817] (-) TimerEvent: {}
+[18.970222] (-) TimerEvent: {}
+[19.070658] (-) TimerEvent: {}
+[19.171061] (-) TimerEvent: {}
+[19.271458] (-) TimerEvent: {}
+[19.371866] (-) TimerEvent: {}
+[19.472235] (-) TimerEvent: {}
+[19.572613] (-) TimerEvent: {}
+[19.673054] (-) TimerEvent: {}
+[19.773514] (-) TimerEvent: {}
+[19.873869] (-) TimerEvent: {}
+[19.974240] (-) TimerEvent: {}
+[20.074682] (-) TimerEvent: {}
+[20.175044] (-) TimerEvent: {}
+[20.275434] (-) TimerEvent: {}
+[20.375777] (-) TimerEvent: {}
+[20.476161] (-) TimerEvent: {}
+[20.576558] (-) TimerEvent: {}
+[20.676962] (-) TimerEvent: {}
+[20.777318] (-) TimerEvent: {}
+[20.877679] (-) TimerEvent: {}
+[20.978081] (-) TimerEvent: {}
+[21.078519] (-) TimerEvent: {}
+[21.178919] (-) TimerEvent: {}
+[21.279308] (-) TimerEvent: {}
+[21.379758] (-) TimerEvent: {}
+[21.480198] (-) TimerEvent: {}
+[21.580702] (-) TimerEvent: {}
+[21.681055] (-) TimerEvent: {}
+[21.781442] (-) TimerEvent: {}
+[21.881827] (-) TimerEvent: {}
+[21.982209] (-) TimerEvent: {}
+[22.082646] (-) TimerEvent: {}
+[22.183012] (-) TimerEvent: {}
+[22.283457] (-) TimerEvent: {}
+[22.383784] (-) TimerEvent: {}
+[22.484155] (-) TimerEvent: {}
+[22.584552] (-) TimerEvent: {}
+[22.684888] (-) TimerEvent: {}
+[22.785283] (-) TimerEvent: {}
+[22.885712] (-) TimerEvent: {}
+[22.986101] (-) TimerEvent: {}
+[23.086475] (-) TimerEvent: {}
+[23.186881] (-) TimerEvent: {}
+[23.287227] (-) TimerEvent: {}
+[23.387599] (-) TimerEvent: {}
+[23.487937] (-) TimerEvent: {}
+[23.588328] (-) TimerEvent: {}
+[23.688716] (-) TimerEvent: {}
+[23.789062] (-) TimerEvent: {}
+[23.889488] (-) TimerEvent: {}
+[23.989871] (-) TimerEvent: {}
+[24.090266] (-) TimerEvent: {}
+[24.190700] (-) TimerEvent: {}
+[24.291110] (-) TimerEvent: {}
+[24.391517] (-) TimerEvent: {}
+[24.491935] (-) TimerEvent: {}
+[24.592311] (-) TimerEvent: {}
+[24.692711] (-) TimerEvent: {}
+[24.793052] (-) TimerEvent: {}
+[24.893497] (-) TimerEvent: {}
+[24.993923] (-) TimerEvent: {}
+[25.094568] (-) TimerEvent: {}
+[25.194984] (-) TimerEvent: {}
+[25.295669] (-) TimerEvent: {}
+[25.396669] (-) TimerEvent: {}
+[25.497095] (-) TimerEvent: {}
+[25.597474] (-) TimerEvent: {}
+[25.697854] (-) TimerEvent: {}
+[25.798197] (-) TimerEvent: {}
+[25.898507] (-) TimerEvent: {}
+[25.998844] (-) TimerEvent: {}
+[26.099193] (-) TimerEvent: {}
+[26.199540] (-) TimerEvent: {}
+[26.299916] (-) TimerEvent: {}
+[26.400257] (-) TimerEvent: {}
+[26.500642] (-) TimerEvent: {}
+[26.600994] (-) TimerEvent: {}
+[26.701343] (-) TimerEvent: {}
+[26.801719] (-) TimerEvent: {}
+[26.902064] (-) TimerEvent: {}
+[27.002458] (-) TimerEvent: {}
+[27.102848] (-) TimerEvent: {}
+[27.203213] (-) TimerEvent: {}
+[27.303614] (-) TimerEvent: {}
+[27.404032] (-) TimerEvent: {}
+[27.504412] (-) TimerEvent: {}
+[27.604747] (-) TimerEvent: {}
+[27.705109] (-) TimerEvent: {}
+[27.805504] (-) TimerEvent: {}
+[27.905859] (-) TimerEvent: {}
+[28.006216] (-) TimerEvent: {}
+[28.106607] (-) TimerEvent: {}
+[28.206935] (-) TimerEvent: {}
+[28.307293] (-) TimerEvent: {}
+[28.407698] (-) TimerEvent: {}
+[28.508088] (-) TimerEvent: {}
+[28.608504] (-) TimerEvent: {}
+[28.708871] (-) TimerEvent: {}
+[28.809218] (-) TimerEvent: {}
+[28.909561] (-) TimerEvent: {}
+[29.010022] (-) TimerEvent: {}
+[29.110347] (-) TimerEvent: {}
+[29.210937] (-) TimerEvent: {}
+[29.311344] (-) TimerEvent: {}
+[29.411746] (-) TimerEvent: {}
+[29.512080] (-) TimerEvent: {}
+[29.612443] (-) TimerEvent: {}
+[29.712818] (-) TimerEvent: {}
+[29.813135] (-) TimerEvent: {}
+[29.913499] (-) TimerEvent: {}
+[30.013878] (-) TimerEvent: {}
+[30.114271] (-) TimerEvent: {}
+[30.214681] (-) TimerEvent: {}
+[30.315066] (-) TimerEvent: {}
+[30.415416] (-) TimerEvent: {}
+[30.515751] (-) TimerEvent: {}
+[30.616130] (-) TimerEvent: {}
+[30.716497] (-) TimerEvent: {}
+[30.816817] (-) TimerEvent: {}
+[30.917470] (-) TimerEvent: {}
+[31.017850] (-) TimerEvent: {}
+[31.118231] (-) TimerEvent: {}
+[31.126483] (turtlebot3_custom_simulation) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable turtlebot3_custom_simulation\x1b[0m\n'}
+[31.218426] (-) TimerEvent: {}
+[31.318795] (-) TimerEvent: {}
+[31.419199] (-) TimerEvent: {}
+[31.519590] (-) TimerEvent: {}
+[31.620002] (-) TimerEvent: {}
+[31.707314] (turtlebot3_custom_simulation) StdoutLine: {'line': b'[100%] Built target turtlebot3_custom_simulation\n'}
+[31.720171] (-) TimerEvent: {}
+[31.729401] (turtlebot3_custom_simulation) CommandEnded: {'returncode': 0}
+[31.793352] (turtlebot3_custom_simulation) JobProgress: {'identifier': 'turtlebot3_custom_simulation', 'progress': 'install'}
+[31.817780] (turtlebot3_custom_simulation) Command: {'cmd': ['/home/luqo/miniforge3/envs/ros_env/bin/cmake', '--install', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/build/turtlebot3_custom_simulation'], 'cwd': '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/build/turtlebot3_custom_simulation', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('CONDA_PROMPT_MODIFIER', '(ros_env)'), ('USER', 'luqo'), ('LC_TIME', 'es_AR.UTF-8'), ('CXXFLAGS', '-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('GCC_RANLIB', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ranlib'), ('XDG_SESSION_TYPE', 'wayland'), ('OBJCOPY', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-objcopy'), ('DEBUG_CXXFLAGS', '-fvisibility-inlines-hidden -fmessage-length=0 -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('ROS_ETC_DIR', '/home/luqo/miniforge3/envs/ros_env/etc/ros'), ('SIZE', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-size'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/gazebo-11/plugins:/home/luqo/miniforge3/envs/ros_env/opt/rviz_ogre_vendor/lib:/home/luqo/miniforge3/envs/ros_env/lib/gazebo-11/plugins:'), ('HOME', '/home/luqo'), ('CC_FOR_BUILD', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-cc'), ('CONDA_SHLVL', '2'), ('OLDPWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6'), ('DESKTOP_SESSION', 'ubuntu'), ('CONDA_TOOLCHAIN_BUILD', 'x86_64-conda-linux-gnu'), ('F90', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LDFLAGS', '-Wl,-O2 -Wl,--sort-common -Wl,--as-needed -Wl,-z,relro -Wl,-z,now -Wl,--disable-new-dtags -Wl,--gc-sections -Wl,--allow-shlib-undefined -Wl,-rpath,/home/luqo/miniforge3/envs/ros_env/lib -Wl,-rpath-link,/home/luqo/miniforge3/envs/ros_env/lib -L/home/luqo/miniforge3/envs/ros_env/lib'), ('CONDA_BACKUP_CMAKE_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization:/home/luqo/Documents/Robotica/turtlebot3_ws/install/turtlebot3_custom_simulation'), ('FC', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('STRINGS', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-strings'), ('LC_MONETARY', 'es_AR.UTF-8'), ('CPL_ZIP_ENCODING', 'UTF-8'), ('SYSTEMD_EXEC_PID', '6209'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_CE_M', ''), ('CPP', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-cpp'), ('_CONDA_ROOT', '/home/luqo/miniforge3'), ('F77', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('F95', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-f95'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ELFEDIT', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-elfedit'), ('COLCON_PREFIX_PATH', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install:/home/luqo/Documents/Robotica/turtlebot3_ws/install'), ('STRIP', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-strip'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'luqo'), ('GCC', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc'), ('_', '/home/luqo/miniforge3/envs/ros_env/bin/colcon'), ('ROS_VERSION', '2'), ('READELF', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-readelf'), ('XDG_SESSION_CLASS', 'user'), ('AR', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ar'), ('USERNAME', 'luqo'), ('GXX', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-g++'), ('FC_FOR_BUILD', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('TERM', 'xterm-256color'), ('AS', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-as'), ('GAZEBO_MODEL_PATH', '/home/luqo/miniforge3/envs/ros_env/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('_CE_CONDA', ''), ('ROS_LOCALHOST_ONLY', '0'), ('CXXFILT', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-c++filt'), ('ROS_OS_OVERRIDE', 'conda:linux'), ('BUILD', 'x86_64-conda-linux-gnu'), ('OGRE_RESOURCE_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/OGRE'), ('PATH', '/home/luqo/miniforge3/envs/ros_env/share/rubygems/bin:/home/luqo/miniforge3/envs/ros_env/bin:/home/luqo/miniforge3/condabin:/home/luqo/miniforge3/envs/ros_env/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/MACHINE:@/tmp/.ICE-unix/1608,unix/MACHINE:/tmp/.ICE-unix/1608'), ('PROJ_NETWORK', 'ON'), ('XDG_MENU_PREFIX', 'gnome-'), ('build_alias', 'x86_64-conda-linux-gnu'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/91bb3c59_16aa_4c1a_9e6b_ce0c3b6d3ed0'), ('GNOME_SETUP_DISPLAY', ':1'), ('PROJ_DATA', '/home/luqo/miniforge3/envs/ros_env/share/proj'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('MAMBA_ROOT_PREFIX', '/home/luqo/.local/share/mamba'), ('GCC_AR', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ar'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('DEBUG_CFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fvar-tracking-assignments -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('CONDA_PREFIX_1', '/home/luqo/miniforge3'), ('_CONDA_PYTHON_SYSCONFIGDATA_NAME', '_sysconfigdata_x86_64_conda_linux_gnu'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.01IQG3'), ('MESON_ARGS', '-Dbuildtype=release'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.148'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('XML_CATALOG_FILES', 'file:///home/luqo/miniforge3/envs/ros_env/etc/xml/catalog file:///etc/xml/catalog'), ('GSETTINGS_SCHEMA_DIR', '/home/luqo/miniforge3/envs/ros_env/share/glib-2.0/schemas'), ('AMENT_PREFIX_PATH', '/home/luqo/miniforge3/envs/ros_env'), ('CPPFLAGS', '-DNDEBUG -D_FORTIFY_SOURCE=2 -O2 -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('CONDA_PYTHON_EXE', '/home/luqo/miniforge3/bin/python'), ('SHELL', '/bin/bash'), ('DEBUG_FFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include -I/home/luqo/miniforge3/envs/ros_env/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fimplicit-none -fvar-tracking-assignments -ffunction-sections -pipe'), ('CMAKE_ARGS', '-DCMAKE_AR=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ar -DCMAKE_CXX_COMPILER_AR=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_C_COMPILER_AR=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ar -DCMAKE_RANLIB=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ranlib -DCMAKE_CXX_COMPILER_RANLIB=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_C_COMPILER_RANLIB=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-ranlib -DCMAKE_LINKER=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ld -DCMAKE_STRIP=/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-strip -DCMAKE_BUILD_TYPE=Release'), ('LC_NAME', 'es_AR.UTF-8'), ('HOST', 'x86_64-conda-linux-gnu'), ('GDAL_DRIVER_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/gdalplugins'), ('QT_ACCESSIBILITY', '1'), ('CXX', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-c++'), ('DEBUG_CPPFLAGS', '-D_DEBUG -D_FORTIFY_SOURCE=2 -Og -isystem /home/luqo/miniforge3/envs/ros_env/include'), ('GDMSESSION', 'ubuntu'), ('GEM_HOME', '/home/luqo/miniforge3/envs/ros_env/share/rubygems/'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('DEBUG_FORTRANFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include -I/home/luqo/miniforge3/envs/ros_env/include -march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-all -fno-plt -Og -g -Wall -Wextra -fcheck=all -fbacktrace -fimplicit-none -fvar-tracking-assignments -ffunction-sections -pipe'), ('CONDA_DEFAULT_ENV', 'ros_env'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/home/luqo/miniforge3/envs/ros_env/share/gazebo-11:'), ('_CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('ADDR2LINE', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-addr2line'), ('MAMBA_EXE', '/home/luqo/miniforge3/bin/mamba'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('GCC_NM', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gcc-nm'), ('GFORTRAN', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gfortran'), ('CONDA_BUILD_SYSROOT', '/home/luqo/miniforge3/envs/ros_env/x86_64-conda-linux-gnu/sysroot'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/build/turtlebot3_custom_simulation'), ('TURTLEBOT3_MODEL', 'burger'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('CONDA_EXE', '/home/luqo/miniforge3/bin/conda'), ('FFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include -I/home/luqo/miniforge3/envs/ros_env/include'), ('GAZEBO_PLUGIN_PATH', '/home/luqo/miniforge3/envs/ros_env/lib/gazebo-11/plugins:'), ('LD', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ld'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/luqo/miniforge3/envs/ros_env/lib/python311/site-packages:/home/luqo/miniforge3/envs/ros_env/lib/python3.11/site-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('GPROF', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-gprof'), ('CONDA_PREFIX', '/home/luqo/miniforge3/envs/ros_env'), ('GSETTINGS_SCHEMA_DIR_CONDA_BACKUP', ''), ('CONDA_TOOLCHAIN_HOST', 'x86_64-conda-linux-gnu'), ('LC_PAPER', 'es_AR.UTF-8'), ('host_alias', 'x86_64-conda-linux-gnu'), ('FORTRANFLAGS', '-march=nocona -mtune=haswell -ftree-vectorize -fPIC -fstack-protector-strong -fno-plt -O2 -ffunction-sections -pipe -isystem /home/luqo/miniforge3/envs/ros_env/include -I/home/luqo/miniforge3/envs/ros_env/include'), ('CC', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-cc'), ('RANLIB', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-ranlib'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CXX_FOR_BUILD', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-c++'), ('CMAKE_PREFIX_PATH', '/home/luqo/miniforge3/envs/ros_env:/home/luqo/miniforge3/envs/ros_env/x86_64-conda-linux-gnu/sysroot/usr'), ('NM', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-nm'), ('GDAL_DATA', '/home/luqo/miniforge3/envs/ros_env/share/gdal'), ('OBJDUMP', '/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-objdump')]), 'shell': False}
+[31.821582] (-) TimerEvent: {}
+[31.839964] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[31.840627] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/lib/turtlebot3_custom_simulation/turtlebot3_custom_simulation\n'}
+[31.844097] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/launch\n'}
+[31.844533] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/launch/custom_simulation.launch.py\n'}
+[31.844794] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/launch/custom_casa_obs2.launch.py\n'}
+[31.845066] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/launch/custom_maze.launch.py\n'}
+[31.845353] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/launch/custom_casa_obs.launch copy.py\n'}
+[31.845652] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/launch/custom_casa.launch.py\n'}
+[31.848682] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/launch/custom_room.launch.py\n'}
+[31.848984] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/param\n'}
+[31.849104] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/param/burger.yaml\n'}
+[31.849222] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds\n'}
+[31.849336] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Armchair\n'}
+[31.849484] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Armchair/model.config\n'}
+[31.849605] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Armchair/model.sdf\n'}
+[31.849716] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Sofa\n'}
+[31.849965] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Sofa/model.config\n'}
+[31.850107] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Sofa/model.sdf\n'}
+[31.850289] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/casa.world\n'}
+[31.850510] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Suitcase1\n'}
+[31.850630] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Suitcase1/model.config\n'}
+[31.850825] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Suitcase1/model.sdf\n'}
+[31.850935] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/maze.world\n'}
+[31.851239] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/casa_obs2.world\n'}
+[31.851953] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Walls\n'}
+[31.852269] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Walls/model.config\n'}
+[31.852663] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Walls/model.sdf\n'}
+[31.852969] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/map\n'}
+[31.853282] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/map/map.yaml\n'}
+[31.853613] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/map/map.pgm\n'}
+[31.854114] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/HospitalBot\n'}
+[31.854460] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/HospitalBot/model.config\n'}
+[31.854786] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/HospitalBot/model.sdf\n'}
+[31.855163] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/casa_o.world\n'}
+[31.855728] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Suitcase2H\n'}
+[31.857475] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Suitcase2H/model.config\n'}
+[31.857798] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/Suitcase2H/model.sdf\n'}
+[31.857958] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/slippery.world\n'}
+[31.858076] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/casa_obs.world\n'}
+[31.858303] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/worlds/room.world\n'}
+[31.858457] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/include/\n'}
+[31.858650] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/include//turtlebot3_custom_simulation\n'}
+[31.858762] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/include//turtlebot3_custom_simulation/turtlebot3_custom_simulation.hpp\n'}
+[31.859485] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/ament_index/resource_index/package_run_dependencies/turtlebot3_custom_simulation\n'}
+[31.860094] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/ament_index/resource_index/parent_prefix_path/turtlebot3_custom_simulation\n'}
+[31.860718] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/environment/ament_prefix_path.sh\n'}
+[31.863357] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/environment/ament_prefix_path.dsv\n'}
+[31.863803] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/environment/path.sh\n'}
+[31.863994] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/environment/path.dsv\n'}
+[31.864254] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/local_setup.bash\n'}
+[31.864514] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/local_setup.sh\n'}
+[31.864707] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/local_setup.zsh\n'}
+[31.864946] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/local_setup.dsv\n'}
+[31.865072] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/package.dsv\n'}
+[31.865183] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/ament_index/resource_index/packages/turtlebot3_custom_simulation\n'}
+[31.867933] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[31.868291] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[31.868516] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/cmake/turtlebot3_custom_simulationConfig.cmake\n'}
+[31.868683] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/cmake/turtlebot3_custom_simulationConfig-version.cmake\n'}
+[31.868845] (turtlebot3_custom_simulation) StdoutLine: {'line': b'-- Installing: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_custom_simulation/install/turtlebot3_custom_simulation/share/turtlebot3_custom_simulation/package.xml\n'}
+[31.875798] (turtlebot3_custom_simulation) CommandEnded: {'returncode': 0}
+[31.923742] (-) TimerEvent: {}
+[31.972018] (turtlebot3_custom_simulation) JobEnded: {'identifier': 'turtlebot3_custom_simulation', 'rc': 0}
+[31.973702] (-) EventReactorShutdown: {}

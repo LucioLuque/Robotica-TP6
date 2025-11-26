@@ -1,0 +1,56 @@
+1. ¿Qué propiedades debe tener dicha heurı́stica para asegurar que A⋆ es óptimo?
+Para que A* garantice encontrar el camino óptimo, la heurística h(n) debe cumplir:
+
+Admisibilidad: es admisible si nunca sobreestima el costo real al objetivo:
+    * h(n)<= h'(n), con h'(n) el costo real mínimo desde n hasta el objetivo.
+
+Consistencia: es consistente si para cualquier nodo n y su vecino:
+    * h(n)<=c(n,n')+ h(n´), con c(n,n') el costo de ir de n a n'
+
+Admisibilidad: A* siempre encuentra el camino de menor costo.
+Consistencia: No hay que reabrir nodos, es más eficiente y estable.
+
+
+3. ¿ Qué pasa si se aumenta la heurı́stica usando h2 , siendo h2 un múltiplo de la
+heurı́stica h definida en el punto anterior. Analizar el comportamiento con diferen-
+tes factores: h2 = {1; 2; 5; 10} ∗ h
+
+Respuesta:
+f(n) = g(n) * k*h(n)
+
+si k=1 va a encontrar el camino óptimo, pero explora más y es más lento.
+Se puede ver que explora 210 celdas, pero el costo es el menor de todos
+
+Running path planning with heuristic h=1.0
+found goal     : [22 33]
+cells expanded : 210
+path cost      : 31.55634918610405
+path length    : 31.55634918610405
+
+
+Si k=2 la heurı́stica pesa más, se confía más en la estimación que en lo realmente recorrido.
+Explora menos nodos, va más directo al objetivo, puede encontrar un camino no óptimo.
+En este caso encuentra un camino aproximado al óptimo recorriendo un cuarto de las celdas.
+
+Running path planning with heuristic h=2.0
+found goal     : [22 33]
+cells expanded : 50
+path cost      : 32.38477631085024
+path length    : 32.38477631085024
+
+
+A medida que se aumenta el k más alla de 2, se va a pesar más la estimacion y cada vez va a ser
+más greedy recorriendo menos celdas pero siendo menos optimo el camino.
+
+Running path planning with heuristic h=5.0
+found goal     : [22 33]
+cells expanded : 46
+path cost      : 34.04163056034262
+path length    : 34.04163056034262
+
+Running path planning with heuristic h=10.0
+found goal     : [22 33]
+cells expanded : 38
+path cost      : 42.284271247461895
+path length    : 42.28427124746189
+
