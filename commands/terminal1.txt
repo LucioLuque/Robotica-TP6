@@ -1,3 +1,4 @@
+rm -rf build/ install/ log/
 conda activate ros_env
 cd ~/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization
 colcon build

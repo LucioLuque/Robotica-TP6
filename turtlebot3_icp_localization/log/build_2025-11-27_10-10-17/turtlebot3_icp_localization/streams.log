@@ -1,0 +1,30 @@
+[0.007s] Invoking command in '/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alumno1/turtlebot3_ws/install/turtlebot3_teleop:/home/alumno1/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization -- -j28 -l28
+[0.040s] [35m[1mConsolidate compiler generated dependencies of target icp_localizer[0m
+[0.056s] [ 50%] [32mBuilding CXX object CMakeFiles/icp_localizer.dir/src/icp_localizer.cpp.o[0m
+[5.787s] [100%] [32m[1mLinking CXX executable icp_localizer[0m
+[6.168s] [100%] Built target icp_localizer
+[6.174s] Invoked command in '/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alumno1/turtlebot3_ws/install/turtlebot3_teleop:/home/alumno1/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --build /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization -- -j28 -l28
+[6.181s] Invoking command in '/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alumno1/turtlebot3_ws/install/turtlebot3_teleop:/home/alumno1/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization
+[6.185s] -- Install configuration: ""
+[6.185s] -- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/lib/turtlebot3_icp_localization/icp_localizer
+[6.187s] -- Set runtime path of "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/lib/turtlebot3_icp_localization/icp_localizer" to ""
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/launch
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/launch/icp_localization.launch.py
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/rviz
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/rviz/icp.rviz
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/ament_index/resource_index/package_run_dependencies/turtlebot3_icp_localization
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/ament_index/resource_index/parent_prefix_path/turtlebot3_icp_localization
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/ament_prefix_path.sh
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/ament_prefix_path.dsv
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/path.sh
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/path.dsv
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.bash
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.sh
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.zsh
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.dsv
+[6.187s] -- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/package.dsv
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/ament_index/resource_index/packages/turtlebot3_icp_localization
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/cmake/turtlebot3_icp_localizationConfig.cmake
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/cmake/turtlebot3_icp_localizationConfig-version.cmake
+[6.187s] -- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/package.xml
+[6.188s] Invoked command in '/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/alumno1/turtlebot3_ws/install/turtlebot3_teleop:/home/alumno1/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble /usr/bin/cmake --install /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization

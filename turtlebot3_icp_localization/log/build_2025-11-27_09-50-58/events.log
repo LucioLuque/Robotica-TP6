@@ -1,0 +1,221 @@
+[0.000000] (-) TimerEvent: {}
+[0.000304] (turtlebot3_icp_localization) JobQueued: {'identifier': 'turtlebot3_icp_localization', 'dependencies': OrderedDict()}
+[0.000365] (turtlebot3_icp_localization) JobStarted: {'identifier': 'turtlebot3_icp_localization'}
+[0.005109] (turtlebot3_icp_localization) JobProgress: {'identifier': 'turtlebot3_icp_localization', 'progress': 'cmake'}
+[0.005211] (turtlebot3_icp_localization) Command: {'cmd': ['/usr/bin/cmake', '/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization', '-DCMAKE_INSTALL_PREFIX=/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization'], 'cwd': '/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'alumno1'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/alumno1/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/alumno1'), ('OLDPWD', '/home/alumno1/Documents/Robotica-TP6'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('SYSTEMD_EXEC_PID', '2419'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/alumno1/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'alumno1'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'alumno1'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/A1568-UBU:@/tmp/.ICE-unix/2395,unix/A1568-UBU:/tmp/.ICE-unix/2395'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9db4f4c_eccd_4b46_a594_74ebbc37fa32'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.GAAQG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/alumno1/turtlebot3_ws/install/turtlebot3:/home/alumno1/turtlebot3_ws/install/turtlebot3_teleop:/home/alumno1/turtlebot3_ws/install/turtlebot3_simulations:/home/alumno1/turtlebot3_ws/install/turtlebot3_bringup:/home/alumno1/turtlebot3_ws/install/turtlebot3_node:/home/alumno1/turtlebot3_ws/install/turtlebot3_navigation2:/home/alumno1/turtlebot3_ws/install/turtlebot3_fake_node:/home/alumno1/turtlebot3_ws/install/turtlebot3_example:/home/alumno1/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/alumno1/turtlebot3_ws/install/turtlebot3_msgs:/home/alumno1/turtlebot3_ws/install/turtlebot3_gazebo:/home/alumno1/turtlebot3_ws/install/turtlebot3_description:/home/alumno1/turtlebot3_ws/install/turtlebot3_cartographer:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_examples:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/alumno1/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/alumno1/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/alumno1/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/alumno1/turtlebot3_ws/install/turtlebot3:/home/alumno1/turtlebot3_ws/install/turtlebot3_simulations:/home/alumno1/turtlebot3_ws/install/turtlebot3_bringup:/home/alumno1/turtlebot3_ws/install/turtlebot3_node:/home/alumno1/turtlebot3_ws/install/turtlebot3_navigation2:/home/alumno1/turtlebot3_ws/install/turtlebot3_fake_node:/home/alumno1/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/alumno1/turtlebot3_ws/install/turtlebot3_msgs:/home/alumno1/turtlebot3_ws/install/turtlebot3_gazebo:/home/alumno1/turtlebot3_ws/install/turtlebot3_description:/home/alumno1/turtlebot3_ws/install/turtlebot3_cartographer:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_examples:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk:/home/alumno1/turtlebot3_ws/install/turtlebot3_teleop:/home/alumno1/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble')]), 'shell': False}
+[0.058484] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.100116] (-) TimerEvent: {}
+[0.105523] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.110927] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.154881] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.158239] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.158460] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.158893] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.160667] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.200206] (-) TimerEvent: {}
+[0.208220] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.213512] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.213642] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.213862] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.217968] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.300269] (-) TimerEvent: {}
+[0.306638] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.367865] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found rclcpp: 16.0.11 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.399455] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.6 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.400324] (-) TimerEvent: {}
+[0.403138] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.6 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.409290] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.6 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.417592] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.429417] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.460037] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.462456] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.7 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.500508] (-) TimerEvent: {}
+[0.520398] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[0.536909] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[0.560223] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.568336] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[0.600582] (-) TimerEvent: {}
+[0.608528] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[0.608682] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[0.651768] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[0.652273] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[0.684176] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found sensor_msgs: 4.2.4 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.700744] (-) TimerEvent: {}
+[0.702969] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found nav_msgs: 4.2.4 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[0.712462] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.12 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[0.775109] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found pcl_conversions: 2.4.5 (/opt/ros/humble/share/pcl_conversions/cmake)\n'}
+[0.795905] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Checking for module 'eigen3'\n"}
+[0.800802] (-) TimerEvent: {}
+[0.805553] (turtlebot3_icp_localization) StdoutLine: {'line': b'--   Found eigen3, version 3.4.0\n'}
+[0.825702] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") \n'}
+[0.825782] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[0.853670] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Checking for module 'flann'\n"}
+[0.862739] (turtlebot3_icp_localization) StdoutLine: {'line': b'--   Found flann, version 1.9.1\n'}
+[0.887768] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found FLANN: /usr/lib/x86_64-linux-gnu/libflann_cpp.so  \n'}
+[0.887838] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- FLANN found (include: /usr/include, lib: /usr/lib/x86_64-linux-gnu/libflann_cpp.so)\n'}
+[0.900879] (-) TimerEvent: {}
+[1.001071] (-) TimerEvent: {}
+[1.101259] (-) TimerEvent: {}
+[1.201456] (-) TimerEvent: {}
+[1.301650] (-) TimerEvent: {}
+[1.401852] (-) TimerEvent: {}
+[1.457103] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Checking for module 'libusb-1.0'\n"}
+[1.464903] (turtlebot3_icp_localization) StdoutLine: {'line': b'--   Found libusb-1.0, version 1.0.25\n'}
+[1.485437] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found libusb: /usr/lib/x86_64-linux-gnu/libusb-1.0.so  \n'}
+[1.486227] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.501931] (-) TimerEvent: {}
+[1.520384] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.601715] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Eigen found (include: /usr/include/eigen3, version: 3.4.0)\n'}
+[1.601982] (-) TimerEvent: {}
+[1.604947] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.608605] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- OpenNI2 found (version: 2.2.0.33, include: /usr/include/openni2, lib: /usr/lib/x86_64-linux-gnu/libOpenNI2.so;libusb::libusb)\n'}
+[1.689757] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found Qhull version 8.0.2\n'}
+[1.702202] (-) TimerEvent: {}
+[1.781719] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- OpenNI found (version: 1.5.4.0, include: /usr/include/ni, lib: /usr/lib/libOpenNI.so;libusb::libusb)\n'}
+[1.802368] (-) TimerEvent: {}
+[1.858843] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_COMMON: /usr/lib/x86_64-linux-gnu/libpcl_common.so  \n'}
+[1.859996] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_KDTREE: /usr/lib/x86_64-linux-gnu/libpcl_kdtree.so  \n'}
+[1.860365] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_OCTREE: /usr/lib/x86_64-linux-gnu/libpcl_octree.so  \n'}
+[1.860746] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_SEARCH: /usr/lib/x86_64-linux-gnu/libpcl_search.so  \n'}
+[1.861077] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_SAMPLE_CONSENSUS: /usr/lib/x86_64-linux-gnu/libpcl_sample_consensus.so  \n'}
+[1.861584] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_FILTERS: /usr/lib/x86_64-linux-gnu/libpcl_filters.so  \n'}
+[1.861718] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_2D: /usr/include/pcl-1.12  \n'}
+[1.862134] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_GEOMETRY: /usr/include/pcl-1.12  \n'}
+[1.862566] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_IO: /usr/lib/x86_64-linux-gnu/libpcl_io.so  \n'}
+[1.863318] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_FEATURES: /usr/lib/x86_64-linux-gnu/libpcl_features.so  \n'}
+[1.863732] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_ML: /usr/lib/x86_64-linux-gnu/libpcl_ml.so  \n'}
+[1.864150] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_SEGMENTATION: /usr/lib/x86_64-linux-gnu/libpcl_segmentation.so  \n'}
+[1.864611] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_VISUALIZATION: /usr/lib/x86_64-linux-gnu/libpcl_visualization.so  \n'}
+[1.865021] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_SURFACE: /usr/lib/x86_64-linux-gnu/libpcl_surface.so  \n'}
+[1.865477] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_REGISTRATION: /usr/lib/x86_64-linux-gnu/libpcl_registration.so  \n'}
+[1.865921] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_KEYPOINTS: /usr/lib/x86_64-linux-gnu/libpcl_keypoints.so  \n'}
+[1.866366] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_TRACKING: /usr/lib/x86_64-linux-gnu/libpcl_tracking.so  \n'}
+[1.866770] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_RECOGNITION: /usr/lib/x86_64-linux-gnu/libpcl_recognition.so  \n'}
+[1.867252] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_STEREO: /usr/lib/x86_64-linux-gnu/libpcl_stereo.so  \n'}
+[1.867649] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_APPS: /usr/lib/x86_64-linux-gnu/libpcl_apps.so  \n'}
+[1.868023] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_IN_HAND_SCANNER: /usr/include/pcl-1.12  \n'}
+[1.868181] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_MODELER: /usr/include/pcl-1.12  \n'}
+[1.868468] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_POINT_CLOUD_EDITOR: /usr/include/pcl-1.12  \n'}
+[1.868888] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_OUTOFCORE: /usr/lib/x86_64-linux-gnu/libpcl_outofcore.so  \n'}
+[1.869356] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found PCL_PEOPLE: /usr/lib/x86_64-linux-gnu/libpcl_people.so  \n'}
+[1.871713] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found laser_geometry: 2.4.0 (/opt/ros/humble/share/laser_geometry/cmake)\n'}
+[1.876321] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.12 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.885135] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found Eigen3: TRUE (found version "3.4.0") \n'}
+[1.885214] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.902661] (-) TimerEvent: {}
+[1.903316] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.953885] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.953994] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/include>\n'}
+[1.954022] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.955085] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.956098] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.956582] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.958394] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.958478] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.958838] (turtlebot3_icp_localization) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.959690] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.991898] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Generating done\n'}
+[1.996322] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Build files have been written to: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization\n'}
+[2.002784] (-) TimerEvent: {}
+[2.007443] (turtlebot3_icp_localization) CommandEnded: {'returncode': 0}
+[2.007750] (turtlebot3_icp_localization) JobProgress: {'identifier': 'turtlebot3_icp_localization', 'progress': 'build'}
+[2.007769] (turtlebot3_icp_localization) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization', '--', '-j28', '-l28'], 'cwd': '/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'alumno1'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/alumno1/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/alumno1'), ('OLDPWD', '/home/alumno1/Documents/Robotica-TP6'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('SYSTEMD_EXEC_PID', '2419'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/alumno1/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'alumno1'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'alumno1'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/A1568-UBU:@/tmp/.ICE-unix/2395,unix/A1568-UBU:/tmp/.ICE-unix/2395'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9db4f4c_eccd_4b46_a594_74ebbc37fa32'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.GAAQG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/alumno1/turtlebot3_ws/install/turtlebot3:/home/alumno1/turtlebot3_ws/install/turtlebot3_teleop:/home/alumno1/turtlebot3_ws/install/turtlebot3_simulations:/home/alumno1/turtlebot3_ws/install/turtlebot3_bringup:/home/alumno1/turtlebot3_ws/install/turtlebot3_node:/home/alumno1/turtlebot3_ws/install/turtlebot3_navigation2:/home/alumno1/turtlebot3_ws/install/turtlebot3_fake_node:/home/alumno1/turtlebot3_ws/install/turtlebot3_example:/home/alumno1/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/alumno1/turtlebot3_ws/install/turtlebot3_msgs:/home/alumno1/turtlebot3_ws/install/turtlebot3_gazebo:/home/alumno1/turtlebot3_ws/install/turtlebot3_description:/home/alumno1/turtlebot3_ws/install/turtlebot3_cartographer:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_examples:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/alumno1/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/alumno1/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/alumno1/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/alumno1/turtlebot3_ws/install/turtlebot3:/home/alumno1/turtlebot3_ws/install/turtlebot3_simulations:/home/alumno1/turtlebot3_ws/install/turtlebot3_bringup:/home/alumno1/turtlebot3_ws/install/turtlebot3_node:/home/alumno1/turtlebot3_ws/install/turtlebot3_navigation2:/home/alumno1/turtlebot3_ws/install/turtlebot3_fake_node:/home/alumno1/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/alumno1/turtlebot3_ws/install/turtlebot3_msgs:/home/alumno1/turtlebot3_ws/install/turtlebot3_gazebo:/home/alumno1/turtlebot3_ws/install/turtlebot3_description:/home/alumno1/turtlebot3_ws/install/turtlebot3_cartographer:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_examples:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk:/home/alumno1/turtlebot3_ws/install/turtlebot3_teleop:/home/alumno1/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble')]), 'shell': False}
+[2.035984] (turtlebot3_icp_localization) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/icp_localizer.dir/src/icp_localizer.cpp.o\x1b[0m\n'}
+[2.102989] (-) TimerEvent: {}
+[2.203215] (-) TimerEvent: {}
+[2.303412] (-) TimerEvent: {}
+[2.405101] (-) TimerEvent: {}
+[2.505394] (-) TimerEvent: {}
+[2.605612] (-) TimerEvent: {}
+[2.705796] (-) TimerEvent: {}
+[2.806021] (-) TimerEvent: {}
+[2.906273] (-) TimerEvent: {}
+[3.006517] (-) TimerEvent: {}
+[3.106749] (-) TimerEvent: {}
+[3.207018] (-) TimerEvent: {}
+[3.307252] (-) TimerEvent: {}
+[3.407470] (-) TimerEvent: {}
+[3.509099] (-) TimerEvent: {}
+[3.609306] (-) TimerEvent: {}
+[3.709488] (-) TimerEvent: {}
+[3.809694] (-) TimerEvent: {}
+[3.909968] (-) TimerEvent: {}
+[4.010271] (-) TimerEvent: {}
+[4.110564] (-) TimerEvent: {}
+[4.210864] (-) TimerEvent: {}
+[4.311145] (-) TimerEvent: {}
+[4.411419] (-) TimerEvent: {}
+[4.511607] (-) TimerEvent: {}
+[4.611787] (-) TimerEvent: {}
+[4.711999] (-) TimerEvent: {}
+[4.812220] (-) TimerEvent: {}
+[4.912419] (-) TimerEvent: {}
+[5.012697] (-) TimerEvent: {}
+[5.112987] (-) TimerEvent: {}
+[5.213302] (-) TimerEvent: {}
+[5.313583] (-) TimerEvent: {}
+[5.413866] (-) TimerEvent: {}
+[5.514149] (-) TimerEvent: {}
+[5.614428] (-) TimerEvent: {}
+[5.714704] (-) TimerEvent: {}
+[5.814983] (-) TimerEvent: {}
+[5.915266] (-) TimerEvent: {}
+[6.015454] (-) TimerEvent: {}
+[6.115641] (-) TimerEvent: {}
+[6.215841] (-) TimerEvent: {}
+[6.316923] (-) TimerEvent: {}
+[6.417504] (-) TimerEvent: {}
+[6.517838] (-) TimerEvent: {}
+[6.618193] (-) TimerEvent: {}
+[6.719523] (-) TimerEvent: {}
+[6.819797] (-) TimerEvent: {}
+[6.920043] (-) TimerEvent: {}
+[7.020282] (-) TimerEvent: {}
+[7.120609] (-) TimerEvent: {}
+[7.221314] (-) TimerEvent: {}
+[7.321550] (-) TimerEvent: {}
+[7.421791] (-) TimerEvent: {}
+[7.522127] (-) TimerEvent: {}
+[7.622353] (-) TimerEvent: {}
+[7.722688] (-) TimerEvent: {}
+[7.823017] (-) TimerEvent: {}
+[7.923362] (-) TimerEvent: {}
+[8.023699] (-) TimerEvent: {}
+[8.123980] (-) TimerEvent: {}
+[8.224335] (-) TimerEvent: {}
+[8.324677] (-) TimerEvent: {}
+[8.380651] (turtlebot3_icp_localization) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable icp_localizer\x1b[0m\n'}
+[8.424801] (-) TimerEvent: {}
+[8.525148] (-) TimerEvent: {}
+[8.625493] (-) TimerEvent: {}
+[8.725809] (-) TimerEvent: {}
+[8.826054] (-) TimerEvent: {}
+[8.873416] (turtlebot3_icp_localization) StdoutLine: {'line': b'[100%] Built target icp_localizer\n'}
+[8.879773] (turtlebot3_icp_localization) CommandEnded: {'returncode': 0}
+[8.880159] (turtlebot3_icp_localization) JobProgress: {'identifier': 'turtlebot3_icp_localization', 'progress': 'install'}
+[8.886164] (turtlebot3_icp_localization) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization'], 'cwd': '/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'alumno1'), ('LC_TIME', 'es_AR.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/alumno1/turtlebot3_ws/install/turtlebot3_msgs/lib:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/lib:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/alumno1'), ('OLDPWD', '/home/alumno1/Documents/Robotica-TP6'), ('DESKTOP_SESSION', 'ubuntu'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'es_AR.UTF-8'), ('SYSTEMD_EXEC_PID', '2419'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1001/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/alumno1/turtlebot3_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'alumno1'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'alumno1'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '1'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/A1568-UBU:@/tmp/.ICE-unix/2395,unix/A1568-UBU:/tmp/.ICE-unix/2395'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'es_AR.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a9db4f4c_eccd_4b46_a594_74ebbc37fa32'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1001'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'es_AR.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1001/.mutter-Xwaylandauth.GAAQG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1001/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/alumno1/turtlebot3_ws/install/turtlebot3:/home/alumno1/turtlebot3_ws/install/turtlebot3_teleop:/home/alumno1/turtlebot3_ws/install/turtlebot3_simulations:/home/alumno1/turtlebot3_ws/install/turtlebot3_bringup:/home/alumno1/turtlebot3_ws/install/turtlebot3_node:/home/alumno1/turtlebot3_ws/install/turtlebot3_navigation2:/home/alumno1/turtlebot3_ws/install/turtlebot3_fake_node:/home/alumno1/turtlebot3_ws/install/turtlebot3_example:/home/alumno1/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/alumno1/turtlebot3_ws/install/turtlebot3_msgs:/home/alumno1/turtlebot3_ws/install/turtlebot3_gazebo:/home/alumno1/turtlebot3_ws/install/turtlebot3_description:/home/alumno1/turtlebot3_ws/install/turtlebot3_cartographer:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_examples:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'es_AR.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'es_AR.UTF-8'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo-11:'), ('LC_IDENTIFICATION', 'es_AR.UTF-8'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization'), ('TURTLEBOT3_MODEL', 'burger'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/alumno1/turtlebot3_ws/install/turtlebot3_teleop/lib/python3.10/site-packages:/home/alumno1/turtlebot3_ws/install/turtlebot3_example/lib/python3.10/site-packages:/home/alumno1/turtlebot3_ws/install/turtlebot3_msgs/local/lib/python3.10/dist-packages:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'es_AR.UTF-8'), ('LC_PAPER', 'es_AR.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/alumno1/turtlebot3_ws/install/turtlebot3:/home/alumno1/turtlebot3_ws/install/turtlebot3_simulations:/home/alumno1/turtlebot3_ws/install/turtlebot3_bringup:/home/alumno1/turtlebot3_ws/install/turtlebot3_node:/home/alumno1/turtlebot3_ws/install/turtlebot3_navigation2:/home/alumno1/turtlebot3_ws/install/turtlebot3_fake_node:/home/alumno1/turtlebot3_ws/install/turtlebot3_custom_simulation:/home/alumno1/turtlebot3_ws/install/turtlebot3_msgs:/home/alumno1/turtlebot3_ws/install/turtlebot3_gazebo:/home/alumno1/turtlebot3_ws/install/turtlebot3_description:/home/alumno1/turtlebot3_ws/install/turtlebot3_cartographer:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_examples:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk_custom_interfaces:/home/alumno1/turtlebot3_ws/install/dynamixel_sdk:/home/alumno1/turtlebot3_ws/install/turtlebot3_teleop:/home/alumno1/turtlebot3_ws/install/turtlebot3_example:/opt/ros/humble')]), 'shell': False}
+[8.891423] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.891516] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/lib/turtlebot3_icp_localization/icp_localizer\n'}
+[8.894367] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Set runtime path of "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/lib/turtlebot3_icp_localization/icp_localizer" to ""\n'}
+[8.894409] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/launch\n'}
+[8.894455] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/launch/icp_localization.launch.py\n'}
+[8.894534] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/rviz\n'}
+[8.894575] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/rviz/icp.rviz\n'}
+[8.894702] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/ament_index/resource_index/package_run_dependencies/turtlebot3_icp_localization\n'}
+[8.894804] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/ament_index/resource_index/parent_prefix_path/turtlebot3_icp_localization\n'}
+[8.894908] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/ament_prefix_path.sh\n'}
+[8.894984] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/ament_prefix_path.dsv\n'}
+[8.895061] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/path.sh\n'}
+[8.895276] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/path.dsv\n'}
+[8.895315] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.bash\n'}
+[8.895352] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.sh\n'}
+[8.895391] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.zsh\n'}
+[8.895424] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.dsv\n'}
+[8.895461] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/package.dsv\n'}
+[8.895511] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/ament_index/resource_index/packages/turtlebot3_icp_localization\n'}
+[8.895556] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/cmake/turtlebot3_icp_localizationConfig.cmake\n'}
+[8.895587] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/cmake/turtlebot3_icp_localizationConfig-version.cmake\n'}
+[8.895616] (turtlebot3_icp_localization) StdoutLine: {'line': b'-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/package.xml\n'}
+[8.898049] (turtlebot3_icp_localization) CommandEnded: {'returncode': 0}
+[8.904333] (turtlebot3_icp_localization) JobEnded: {'identifier': 'turtlebot3_icp_localization', 'rc': 0}
+[8.904593] (-) EventReactorShutdown: {}

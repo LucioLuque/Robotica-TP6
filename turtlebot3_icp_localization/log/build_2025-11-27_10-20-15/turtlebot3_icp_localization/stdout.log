@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target icp_localizer[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/icp_localizer.dir/src/icp_localizer.cpp.o[0m
+[100%] [32m[1mLinking CXX executable icp_localizer[0m
+[100%] Built target icp_localizer
+-- Install configuration: ""
+-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/lib/turtlebot3_icp_localization/icp_localizer
+-- Set runtime path of "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/lib/turtlebot3_icp_localization/icp_localizer" to ""
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/launch
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/launch/icp_localization.launch.py
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/rviz
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/rviz/icp.rviz
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/ament_index/resource_index/package_run_dependencies/turtlebot3_icp_localization
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/ament_index/resource_index/parent_prefix_path/turtlebot3_icp_localization
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/ament_prefix_path.sh
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/path.sh
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/environment/path.dsv
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.bash
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.sh
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.zsh
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/local_setup.dsv
+-- Installing: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/package.dsv
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/ament_index/resource_index/packages/turtlebot3_icp_localization
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/cmake/turtlebot3_icp_localizationConfig.cmake
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/cmake/turtlebot3_icp_localizationConfig-version.cmake
+-- Up-to-date: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization/share/turtlebot3_icp_localization/package.xml

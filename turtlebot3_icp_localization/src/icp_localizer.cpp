@@ -14,6 +14,7 @@
 
 // Add for std::abs
 #include <cmath>
+#include <pcl/kdtree/kdtree_flann.h>
 
 class IcpLocalizer : public rclcpp::Node
 {
@@ -81,32 +82,34 @@ private:
         // de rotación, no actualicen current_pose_, de lo contrario divergerá.
         
         // Filtrar puntos NaN
-        pcl::PointCloud<pcl::PointXYZ>::Ptr current_filtered(new pcl::PointCloud<pcl::PointXYZ>);
-        current_filtered->reserve(current_cloud->size());
-        for (const auto &p : current_cloud->points) {
-            if (std::isfinite(p.x) && std::isfinite(p.y) && std::isfinite(p.z)) {
-                current_filtered->push_back(p);
-            }
-        }
+        // pcl::PointCloud<pcl::PointXYZ>::Ptr current_filtered(new pcl::PointCloud<pcl::PointXYZ>);
+        // current_filtered->reserve(current_cloud->size());
+        // for (const auto &p : current_cloud->points) {
+        //     if (std::isfinite(p.x) && std::isfinite(p.y) && std::isfinite(p.z)) {
+        //         current_filtered->push_back(p);
+        //     }
+        // }
 
-        pcl::PointCloud<pcl::PointXYZ>::Ptr stable_filtered(new pcl::PointCloud<pcl::PointXYZ>);
-        stable_filtered->reserve(stable_cloud_->size());
-        for (const auto &p : stable_cloud_->points) {
-            if (std::isfinite(p.x) && std::isfinite(p.y) && std::isfinite(p.z)) {
-                stable_filtered->push_back(p);
-            }
-        }
+        // pcl::PointCloud<pcl::PointXYZ>::Ptr stable_filtered(new pcl::PointCloud<pcl::PointXYZ>);
+        // stable_filtered->reserve(stable_cloud_->size());
+        // for (const auto &p : stable_cloud_->points) {
+        //     if (std::isfinite(p.x) && std::isfinite(p.y) && std::isfinite(p.z)) {
+        //         stable_filtered->push_back(p);
+        //     }
+        // }
 
 
         Eigen::Matrix4f icp_transform;
-        bool converged = icp(current_filtered, stable_filtered, icp_transform);
+        // bool converged = icp(current_filtered, stable_filtered, icp_transform);
+        bool converged = icp(current_cloud, stable_cloud_, icp_transform);
+
         if (converged) {
             update_pose(icp_transform);
-            publish_transform();
             stable_cloud_ = current_cloud;
+            publish_transform();
         }
 
-         // Con la convergencia aprobada, actualizar la nube estable.
+
     }
 
 private:
@@ -114,16 +117,16 @@ private:
                     pcl::PointCloud<pcl::PointXYZ>::Ptr target,
                     Eigen::Matrix4f &final_transform) {
         final_transform = Eigen::Matrix4f::Identity();
-        const int MAX_ITERS = 15;
-        const float ROT_THRESHOLD = 0.01; // rad ≈ 0.5°
+        const int MAX_ITERS = 50;
+        const float ROT_THRESHOLD = 0.1;
         float angle;
 
         pcl::PointCloud<pcl::PointXYZ>::Ptr src(new pcl::PointCloud<pcl::PointXYZ>(*source));
 
         for(int iter = 0; iter < MAX_ITERS; iter++) {
             std::vector<Eigen::Vector2f> src_pts, tgt_pts;
-            closest_point_matching(src, target, src_pts, tgt_pts);
-            
+            // closest_point_matching(src, target, src_pts, tgt_pts);
+            closest_point_matching_with_kdtree(src, target, src_pts, tgt_pts);
 
             //centroides
             Eigen::Vector2f centroid_src = Eigen::Vector2f::Zero();
@@ -173,8 +176,13 @@ private:
             
             //convergencia
             angle = std::atan2(R(1,0), R(0,0));
-            if(std::abs(angle) < ROT_THRESHOLD)
+            if(std::abs(angle) < ROT_THRESHOLD) {
+                std::cout << "Converged with angle: " << angle << std::endl;
                 return true;
+            }
+            else {
+                std::cout << "Iteration " << iter << ", angle: " << angle << std::endl;
+            }
         }
         return false;
     }
@@ -212,6 +220,28 @@ private:
 
                 src_pts.push_back(Eigen::Vector2f(p.x,p.y));
                 tgt_pts.push_back(Eigen::Vector2f(q.x,q.y));
+            }
+        }
+    }
+
+    void closest_point_matching_with_kdtree(pcl::PointCloud<pcl::PointXYZ>::Ptr src,
+                                            pcl::PointCloud<pcl::PointXYZ>::Ptr target,
+                                            std::vector<Eigen::Vector2f> &src_pts,
+                                            std::vector<Eigen::Vector2f> &tgt_pts) {
+        pcl::KdTreeFLANN<pcl::PointXYZ> kdtree;
+        kdtree.setInputCloud(target);
+
+        std::vector<bool> used(target->size(), false);
+        for (const auto &p : src->points) {
+            std::vector<int> nearest_indices(1);
+            std::vector<float> nearest_distances(1);
+            if (kdtree.nearestKSearch(p, 1, nearest_indices, nearest_distances) > 0) {
+                int idx = nearest_indices[0];
+                if (!used[idx]) {
+                    src_pts.push_back(Eigen::Vector2f(p.x, p.y));
+                    tgt_pts.push_back(Eigen::Vector2f(target->points[idx].x, target->points[idx].y));
+                    used[idx] = true;
+                }
             }
         }
     }

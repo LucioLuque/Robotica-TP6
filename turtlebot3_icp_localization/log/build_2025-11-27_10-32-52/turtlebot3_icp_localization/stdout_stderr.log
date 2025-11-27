@@ -1,0 +1,15 @@
+[35m[1mConsolidate compiler generated dependencies of target icp_localizer[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/icp_localizer.dir/src/icp_localizer.cpp.o[0m
+[01m[K/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/src/icp_localizer.cpp:[m[K In member function ‘[01m[Kvoid IcpLocalizer::closest_point_matching_with_kdtree(pcl::PointCloud<pcl::PointXYZ>::Ptr, pcl::PointCloud<pcl::PointXYZ>::Ptr, std::vector<Eigen::Matrix<float, 2, 1> >&, std::vector<Eigen::Matrix<float, 2, 1> >&)[m[K’:
+[01m[K/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/src/icp_localizer.cpp:230:14:[m[K [01;31m[Kerror: [m[K‘[01m[KKdTreeFLANN[m[K’ is not a member of ‘[01m[Kpcl[m[K’
+  230 |         pcl::[01;31m[KKdTreeFLANN[m[K<pcl::PointXYZ> kdtree;
+      |              [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/src/icp_localizer.cpp:230:39:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+  230 |         pcl::KdTreeFLANN<pcl::PointXYZ[01;31m[K>[m[K kdtree;
+      |                                       [01;31m[K^[m[K
+[01m[K/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/src/icp_localizer.cpp:230:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kkdtree[m[K’ was not declared in this scope
+  230 |         pcl::KdTreeFLANN<pcl::PointXYZ> [01;31m[Kkdtree[m[K;
+      |                                         [01;31m[K^~~~~~[m[K
+gmake[2]: *** [CMakeFiles/icp_localizer.dir/build.make:76: CMakeFiles/icp_localizer.dir/src/icp_localizer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/icp_localizer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
