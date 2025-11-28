@@ -43,7 +43,7 @@ def get_edge_cost(parent, child, occ_map):
   '''your code here'''
   '''***        ***'''
 
-  if occ_map[child[0], child[1]] >= 0.5:
+  if occ_map[child[0], child[1]] >= 0.1:
     edge_cost = np.inf
   else:
     # edge_cost = get_heuristic(parent, child)
