@@ -27,16 +27,15 @@ cells expanded : 210
 path cost      : 31.55634918610405
 path length    : 31.55634918610405
 
-
 Si k=2 la heurı́stica pesa más, se confía más en la estimación que en lo realmente recorrido.
 Explora menos nodos, va más directo al objetivo, puede encontrar un camino no óptimo.
 En este caso encuentra un camino aproximado al óptimo recorriendo un cuarto de las celdas.
 
 Running path planning with heuristic h=2.0
 found goal     : [22 33]
-cells expanded : 50
-path cost      : 32.38477631085024
-path length    : 32.38477631085024
+cells expanded : 88
+path cost      : 36.970562748477136
+path length    : 36.38477631085023
 
 
 A medida que se aumenta el k más alla de 2, se va a pesar más la estimacion y cada vez va a ser
@@ -44,13 +43,13 @@ más greedy recorriendo menos celdas pero siendo menos optimo el camino.
 
 Running path planning with heuristic h=5.0
 found goal     : [22 33]
-cells expanded : 46
-path cost      : 34.04163056034262
-path length    : 34.04163056034262
+cells expanded : 60
+path cost      : 39.21320343559642
+path length    : 39.21320343559642
 
 Running path planning with heuristic h=10.0
 found goal     : [22 33]
-cells expanded : 38
-path cost      : 42.284271247461895
-path length    : 42.28427124746189
+cells expanded : 47
+path cost      : 48.870057685088796
+path length    : 48.87005768508879
 

@@ -1,8 +1,8 @@
-# Install script for directory: /home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization
+# Install script for directory: /home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization")
+  set(CMAKE_INSTALL_PREFIX "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/install/turtlebot3_icp_localization")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,94 +39,94 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-objdump")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_icp_localization/icp_localizer" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_icp_localization/icp_localizer")
     file(RPATH_CHECK
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_icp_localization/icp_localizer"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_icp_localization" TYPE EXECUTABLE FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/icp_localizer")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_icp_localization" TYPE EXECUTABLE FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/icp_localizer")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_icp_localization/icp_localizer" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_icp_localization/icp_localizer")
-    file(RPATH_CHANGE
-         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_icp_localization/icp_localizer"
-         OLD_RPATH "/opt/ros/humble/lib:"
-         NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_icp_localization/icp_localizer")
+      execute_process(COMMAND "/home/luqo/miniforge3/envs/ros_env/bin/x86_64-conda-linux-gnu-strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/turtlebot3_icp_localization/icp_localizer")
     endif()
   endif()
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE DIRECTORY FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/launch")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  include("/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/CMakeFiles/icp_localizer.dir/install-cxx-module-bmi-noconfig.cmake" OPTIONAL)
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE DIRECTORY FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/rviz")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE DIRECTORY FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/launch")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_icp_localization")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE DIRECTORY FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/rviz")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_icp_localization")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/turtlebot3_icp_localization")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/turtlebot3_icp_localization")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization/environment" TYPE FILE FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization/environment" TYPE FILE FILES "/home/luqo/miniforge3/envs/ros_env/share/ament_cmake_core/cmake/environment_hooks/environment/ament_prefix_path.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization/environment" TYPE FILE FILES "/opt/ros/humble/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization/environment" TYPE FILE FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization/environment" TYPE FILE FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/path.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization/environment" TYPE FILE FILES "/home/luqo/miniforge3/envs/ros_env/share/ament_cmake_core/cmake/environment_hooks/environment/path.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE FILE FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/local_setup.bash")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization/environment" TYPE FILE FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/path.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE FILE FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/local_setup.sh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE FILE FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE FILE FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/local_setup.zsh")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE FILE FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE FILE FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/local_setup.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE FILE FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE FILE FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/package.dsv")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE FILE FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_icp_localization")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE FILE FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_environment_hooks/package.dsv")
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_index/share/ament_index/resource_index/packages/turtlebot3_icp_localization")
+endif()
+
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization/cmake" TYPE FILE FILES
-    "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_core/turtlebot3_icp_localizationConfig.cmake"
-    "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_core/turtlebot3_icp_localizationConfig-version.cmake"
+    "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_core/turtlebot3_icp_localizationConfig.cmake"
+    "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/ament_cmake_core/turtlebot3_icp_localizationConfig-version.cmake"
     )
 endif()
 
-if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE FILE FILES "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/package.xml")
+if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/turtlebot3_icp_localization" TYPE FILE FILES "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/package.xml")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -137,5 +137,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/alumno1/Documents/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/luqo/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization/build/turtlebot3_icp_localization/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
