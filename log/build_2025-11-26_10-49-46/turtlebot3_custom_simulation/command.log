@@ -1,2 +1,0 @@
-Invoking command in '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_custom_simulation': CONDA_PROMPT_MODIFIER=(ros_env) /home/luqo/miniforge3/envs/ros_env/bin/cmake --build /home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_custom_simulation -- -j8 -l8
-Invoked command in '/home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_custom_simulation' returned '2': CONDA_PROMPT_MODIFIER=(ros_env) /home/luqo/miniforge3/envs/ros_env/bin/cmake --build /home/luqo/Documents/Robotica/TPs/Robotica-TP6/build/turtlebot3_custom_simulation -- -j8 -l8

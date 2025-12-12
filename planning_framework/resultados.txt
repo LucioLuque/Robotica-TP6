@@ -37,7 +37,6 @@ cells expanded : 88
 path cost      : 36.970562748477136
 path length    : 36.38477631085023
 
-
 A medida que se aumenta el k más alla de 2, se va a pesar más la estimacion y cada vez va a ser
 más greedy recorriendo menos celdas pero siendo menos optimo el camino.
 

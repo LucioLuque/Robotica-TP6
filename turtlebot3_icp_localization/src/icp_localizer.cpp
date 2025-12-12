@@ -41,10 +41,8 @@ public:
 
 private:
     void scan_callback(const sensor_msgs::msg::LaserScan::SharedPtr msg)
-    /// #TODO: Ejecuten ICP cada vez que se reciba un nuevo scan: mantendrán 
-    // stable_cloud como la convergencia de la nube de puntos por ICP y actualizarán
-    //  current_pose_ y current_cloud_publisher_ con la nueva convergencia
-    //  para filtrar odometría y observar el correcto funcionamiento
+    /// #TODO: Ejecuten ICP cada vez que se reciba un nuevo scan: mantendrán stable_cloud como la convergencia de la nube de puntos por ICP
+    /// y actualizarán current_pose_ y current_cloud_publisher_ con la nueva convergencia para filtrar odometría y observar el correcto funcionamiento
     /// de la nube de puntos en Rviz2. 
     {
         // Convert LaserScan to PointCloud
@@ -75,41 +73,24 @@ private:
         curr_cloud_msg.header.frame_id = "odom";
         current_cloud_publisher_->publish(curr_cloud_msg);
 
-        /// #TODO: Ejecuten ICP: roten la nube de puntos y obtengan la respectiva matriz
-        //  de transformación, luego usen update_pose para actualizar current_pose_ y 
-        // publish_transform para publicar la transformación en Rviz2. NOTA: No olviden filtrar
-        /// la convergencia de ICP, si la rotación no converge por debajo de un límite 
-        // de rotación, no actualicen current_pose_, de lo contrario divergerá.
-        
-        // Filtrar puntos NaN
-        // pcl::PointCloud<pcl::PointXYZ>::Ptr current_filtered(new pcl::PointCloud<pcl::PointXYZ>);
-        // current_filtered->reserve(current_cloud->size());
-        // for (const auto &p : current_cloud->points) {
-        //     if (std::isfinite(p.x) && std::isfinite(p.y) && std::isfinite(p.z)) {
-        //         current_filtered->push_back(p);
-        //     }
-        // }
+        /// #TODO: Ejecuten ICP: roten la nube de puntos y obtengan la respectiva matriz de transformación, luego usen update_pose
+        /// para actualizar current_pose_ y publish_transform para publicar la transformación en Rviz2. NOTA: No olviden filtrar
+        /// la convergencia de ICP, si la rotación no converge por debajo de un límite de rotación, no actualicen current_pose_, de
+        /// lo contrario divergerá.
 
-        // pcl::PointCloud<pcl::PointXYZ>::Ptr stable_filtered(new pcl::PointCloud<pcl::PointXYZ>);
-        // stable_filtered->reserve(stable_cloud_->size());
-        // for (const auto &p : stable_cloud_->points) {
-        //     if (std::isfinite(p.x) && std::isfinite(p.y) && std::isfinite(p.z)) {
-        //         stable_filtered->push_back(p);
-        //     }
-        // }
-
+        pcl::PointCloud<pcl::PointXYZ>::Ptr current_cloud_copy(new pcl::PointCloud<pcl::PointXYZ>(*current_cloud));
+        pcl::PointCloud<pcl::PointXYZ>::Ptr stable_cloud_copy(new pcl::PointCloud<pcl::PointXYZ>(*stable_cloud_));
 
         Eigen::Matrix4f icp_transform;
-        // bool converged = icp(current_filtered, stable_filtered, icp_transform);
-        bool converged = icp(current_cloud, stable_cloud_, icp_transform);
+        bool converged = icp(current_cloud_copy, stable_cloud_copy, icp_transform);
 
         if (converged) {
             update_pose(icp_transform);
-            stable_cloud_ = current_cloud;
+            stable_cloud_ = current_cloud_copy;
             publish_transform();
         }
-
-
+        
+        // stable_cloud_ = current_cloud; // Con la convergencia aprobada, actualizar la nube estable.
     }
 
 private:
@@ -117,9 +98,7 @@ private:
                     pcl::PointCloud<pcl::PointXYZ>::Ptr target,
                     Eigen::Matrix4f &final_transform) {
         final_transform = Eigen::Matrix4f::Identity();
-        const int MAX_ITERS = 50;
-        const float ROT_THRESHOLD = 0.1;
-        float angle;
+        const int MAX_ITERS = 30;
 
         pcl::PointCloud<pcl::PointXYZ>::Ptr src(new pcl::PointCloud<pcl::PointXYZ>(*source));
 
@@ -168,20 +147,24 @@ private:
             final_transform = T * final_transform;
 
             for(auto &p: src->points) {
-                Eigen::Vector4f pt(p.x,p.y,0,1);
+                Eigen::Vector4f pt(p.x,p.y,0.0f,1.0f);
                 pt = T * pt;
                 p.x = pt(0);
                 p.y = pt(1);
             }
-            
-            //convergencia
-            angle = std::atan2(R(1,0), R(0,0));
-            if(std::abs(angle) < ROT_THRESHOLD) {
-                std::cout << "Converged with angle: " << angle << std::endl;
-                return true;
+
+            //convergencia con rmse
+            float rmse = 0.0f;
+            for(size_t i=0;i<src_pts.size();i++) {
+                Eigen::Vector2f diff = tgt_pts[i] - (R * src_pts[i] + t);
+                rmse += diff.squaredNorm();
             }
-            else {
-                std::cout << "Iteration " << iter << ", angle: " << angle << std::endl;
+            rmse = std::sqrt(rmse / src_pts.size());
+            if(rmse < 0.01f) {
+                std::cout << "Converged with RMSE: " << rmse << std::endl;
+                return true;
+            } else {
+                std::cout << "Iteration " << iter << ", RMSE: " << rmse << std::endl;
             }
         }
         return false;
@@ -224,6 +207,7 @@ private:
         }
     }
 
+private:
     void closest_point_matching_with_kdtree(pcl::PointCloud<pcl::PointXYZ>::Ptr src,
                                             pcl::PointCloud<pcl::PointXYZ>::Ptr target,
                                             std::vector<Eigen::Vector2f> &src_pts,
@@ -245,10 +229,6 @@ private:
             }
         }
     }
-
-
-
-    
 
 
     void update_pose(const Eigen::Matrix4f& transform)

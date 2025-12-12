@@ -1,6 +1,6 @@
-rm -rf build/ install/ log/
 conda activate ros_env
 cd ~/Documents/Robotica/TPs/Robotica-TP6/turtlebot3_icp_localization
+rm -rf build/ install/ log/
 colcon build
 source install/setup.bash
 ros2 launch turtlebot3_icp_localization icp_localization.launch.py

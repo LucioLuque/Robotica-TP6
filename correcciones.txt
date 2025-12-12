@@ -1,0 +1,11 @@
+	
+2- Falta agregar el costo de penalizacion por ocupacion para evitar zonas de riesgo
+intermedio (solicitado por la consigna)
+
+else:
+
+    distancia = np.linalg.norm(np.array(parent) - np.array(child))
+
+    riesgo = occ_map[child[0], child[1]] * 10.0 
+
+    edge_cost = distancia + riesgo
